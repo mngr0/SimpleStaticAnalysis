@@ -56,13 +56,18 @@ public class Environment {
 	}
 	
 	/**
-	 * Remove the variable with the given id from the current scope
+	 * Remove the variable with the given id from the first scope that contains it
 	 * notice that if the variable exists in an outer scope it will have
 	 * that value
 	 * @param id
 	 */
 	public void deleteVariable(String id){
-	    scopes.peek().remove(id);		
+		for(HashMap<String, Integer> scope:scopes){
+			if(scope.containsKey(id)){
+				scope.remove(id);
+				return;
+			}
+		}
 	}
 
 }
