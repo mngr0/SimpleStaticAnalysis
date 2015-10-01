@@ -1,0 +1,20 @@
+{
+ 	a = 4;
+	print b;
+	{
+		a = 2;
+		print a;
+		delete a;
+	}
+	delete a;
+	print a;
+	b = 4;
+	print b;
+	
+	//lexical error
+	//2a = 3;
+	
+	//parser error
+	//delete 2;
+		
+}
