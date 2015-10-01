@@ -54,7 +54,7 @@ public class Analyse {
 			//check semantics
 			//give a fresh environment, no need to make it persist
 			//this is just semantic checking
-			List<SemanticError> errors = p.CheckSemantics(new Environment());
+			List<SemanticError> errors = p.checkSemantics(new Environment());
 			
 			//this means the semantic checker found some errors
 			if(errors.size() > 0){

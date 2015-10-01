@@ -29,10 +29,10 @@ public class SimpleExpNeg extends SimpleExp {
 	 * Check semantics in the expression
 	 */
 	@Override
-	public List<SemanticError> CheckSemantics(Environment e) {
+	public List<SemanticError> checkSemantics(Environment e) {
 		List<SemanticError> result = new LinkedList<SemanticError>();
 		
-		result.addAll(exp.CheckSemantics(e));
+		result.addAll(exp.checkSemantics(e));
 			
 		return result;
 	}

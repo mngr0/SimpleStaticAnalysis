@@ -17,9 +17,9 @@ public class SimpleStmtAssignment extends SimpleStmt{
 	}
 
 	@Override
-	public List<SemanticError> CheckSemantics(Environment e) {
+	public List<SemanticError> checkSemantics(Environment e) {
 		
-		List<SemanticError> res = exp.CheckSemantics(e);
+		List<SemanticError> res = exp.checkSemantics(e);
 		
 		e.addVariable(id);
 		

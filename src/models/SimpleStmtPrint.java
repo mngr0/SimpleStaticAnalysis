@@ -19,8 +19,8 @@ public class SimpleStmtPrint extends SimpleStmt {
 	 * @see models.SimpleElementBase#CheckSemantics(models.Environment)
 	 */
 	@Override
-	public List<SemanticError> CheckSemantics(Environment e) {
-		return exp.CheckSemantics(e);
+	public List<SemanticError> checkSemantics(Environment e) {
+		return exp.checkSemantics(e);
 	}
 
 }

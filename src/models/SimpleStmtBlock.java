@@ -20,9 +20,9 @@ public class SimpleStmtBlock extends SimpleStmt {
 	 * It creates a new scope for the elements that will be found inside
 	 * Each element may add new elements to the environment inside the current scope
 	 * After finishing drop the newly created scope
-	 * @see models.SimpleElementBase#CheckSemantics(models.Environment)
+	 * @see models.SimpleElementBase#checkSemantics(models.Environment)
 	 */
-	public List<SemanticError> CheckSemantics(Environment e) {
+	public List<SemanticError> checkSemantics(Environment e) {
 		//create scope for inner elements
 		e.openScope();
 		
@@ -32,7 +32,7 @@ public class SimpleStmtBlock extends SimpleStmt {
 		//check children semantics
 		if(children!=null)
 			for(SimpleStmt el:children)
-				result.addAll(el.CheckSemantics(e));
+				result.addAll(el.checkSemantics(e));
 		
 		//close scope for this block
 		e.closeScope();

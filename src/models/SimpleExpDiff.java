@@ -30,11 +30,11 @@ public class SimpleExpDiff extends SimpleExp {
 	 * Check semantics in both side expressions
 	 */
 	@Override
-	public List<SemanticError> CheckSemantics(Environment e) {
+	public List<SemanticError> checkSemantics(Environment e) {
 		List<SemanticError> result = new LinkedList<SemanticError>();
 		
-		result.addAll(leftSide.CheckSemantics(e));
-		result.addAll(rightSide.CheckSemantics(e));
+		result.addAll(leftSide.checkSemantics(e));
+		result.addAll(rightSide.checkSemantics(e));
 		
 		return result;
 	}

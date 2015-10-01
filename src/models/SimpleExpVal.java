@@ -22,7 +22,7 @@ public class SimpleExpVal extends SimpleExp {
 	 * @see models.SimpleElementBase#CheckSemantics(models.Environment)
 	 */
 	@Override
-	public List<SemanticError> CheckSemantics(Environment e) {
+	public List<SemanticError> checkSemantics(Environment e) {
 		List<SemanticError> result = new LinkedList<SemanticError>();
 				
 		return result;

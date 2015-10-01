@@ -9,6 +9,6 @@ public abstract class SimpleElementBase {
 	 * @param e is the current environment where the information about existent variables is stored
 	 * @return a list of the semantic problems found
 	 */
-	public abstract List<SemanticError> CheckSemantics(Environment e);
+	public abstract List<SemanticError> checkSemantics(Environment e);
 		
 }
