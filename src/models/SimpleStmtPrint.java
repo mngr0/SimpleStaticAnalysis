@@ -2,6 +2,9 @@ package models;
 
 import java.util.List;
 
+import models.behavior.BTBase;
+import models.behavior.BTPrint;
+
 public class SimpleStmtPrint extends SimpleStmt {
 
 	private SimpleExp exp;
@@ -21,6 +24,12 @@ public class SimpleStmtPrint extends SimpleStmt {
 	@Override
 	public List<SemanticError> checkSemantics(Environment e) {
 		return exp.checkSemantics(e);
+	}
+
+	@Override
+	public BTBase inferBehavior(Environment e) {
+		
+		return new BTPrint(exp.getValue(e));
 	}
 
 }

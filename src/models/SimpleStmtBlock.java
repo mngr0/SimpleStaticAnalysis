@@ -3,6 +3,9 @@ package models;
 import java.util.LinkedList;
 import java.util.List;
 
+import models.behavior.BTBase;
+import models.behavior.BTBlock;
+
 public class SimpleStmtBlock extends SimpleStmt {
 	
 	List<SimpleStmt> children;
@@ -38,6 +41,27 @@ public class SimpleStmtBlock extends SimpleStmt {
 		e.closeScope();
 		
 		return result;
+	}
+
+	@Override
+	public BTBase inferBehavior(Environment e) {
+		//create scope for inner elements
+		e.openScope();
+		
+		BTBlock current = null;
+		
+		LinkedList<BTBase> behaviors = new LinkedList<BTBase>();
+		for(SimpleStmt el:children)
+			behaviors.push(el.inferBehavior(e));
+		
+		for(BTBase b:behaviors){
+			current = BTBase.add(b,current);
+		}
+		
+		//close scope for this block
+		e.closeScope();
+		
+		return current;
 	}
 
 }

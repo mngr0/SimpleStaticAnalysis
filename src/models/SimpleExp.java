@@ -1,5 +1,7 @@
 package models;
 
+import models.behavior.BTBase;
+
 /**
  * Represents a Simple Expression
  * Some child classes of this one will be SimpleExpSum, SimpleExpDiff, 
@@ -15,5 +17,11 @@ public abstract class SimpleExp extends SimpleElementBase {
 	 * @return an integer which is the value of the expression
 	 */
 	public abstract int getValue(Environment e);
+	
+	@Override
+	public BTBase inferBehavior(Environment e) {
+		
+		return null;
+	}
 
 }

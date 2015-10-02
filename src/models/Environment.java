@@ -16,9 +16,9 @@ public class Environment {
 	 * Adds variable with the given id to existence	
 	 * @param id
 	 */
-	public void addVariable(String id) {
+	public void addVariable(String id, int val) {
 		// TODO Auto-generated method stub
-		scopes.peek().put(id, null);
+		scopes.peek().put(id, val);
 	}
 	
 	
@@ -68,6 +68,33 @@ public class Environment {
 				return;
 			}
 		}
+	}
+	
+	/**
+	 * Check for variable
+	 * @param id of the variable
+	 * @return variable value, null if the variable doesnt exist
+	 */
+	public Integer getVariableValue(String id){
+		for(HashMap<String, Integer> scope:scopes){
+			if(scope.containsKey(id)){
+				return scope.get(id);				
+			}
+		}
+		
+		return null;
+	}
+	
+	
+	/**
+	 * Check local scope for variable
+	 * @param id of the variable
+	 * @return variable value in current scope, null otherwise
+	 */
+	public Integer getVariableValueLocal(String id){
+		
+		return scopes.peek().get(id);		
+		
 	}
 
 }

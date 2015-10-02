@@ -1,7 +1,6 @@
 package analyser;
 
 import java.io.FileInputStream;
-
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.List;
@@ -11,6 +10,8 @@ import models.SemanticError;
 import models.SimpleStmtBlock;
 import models.SimpleVisitorImpl;
 
+
+import models.behavior.BTBlock;
 
 import org.antlr.v4.runtime.ANTLRInputStream;
 import org.antlr.v4.runtime.CommonTokenStream;
@@ -49,12 +50,12 @@ public class Analyse {
 			SimpleVisitorImpl visitor = new SimpleVisitorImpl();
 			
 			//visit the root, this will recursively visit the whole tree
-			SimpleStmtBlock p = (SimpleStmtBlock) visitor.visitBlock(parser.block());
+			SimpleStmtBlock mainBlock = (SimpleStmtBlock) visitor.visitBlock(parser.block());
 			
 			//check semantics
 			//give a fresh environment, no need to make it persist
 			//this is just semantic checking
-			List<SemanticError> errors = p.checkSemantics(new Environment());
+			List<SemanticError> errors = mainBlock.checkSemantics(new Environment());
 			
 			//this means the semantic checker found some errors
 			if(errors.size() > 0){
@@ -63,6 +64,12 @@ public class Analyse {
 					System.out.println(err);
 			}else{
 				System.out.println("Check semantics succeded");
+				System.out.println("Calculating behavioral type");
+				
+				//give a fresh environment, no need to make it persist
+				BTBlock res = (BTBlock)mainBlock.inferBehavior(new Environment());
+				
+				System.out.println(res.toString());
 			}
 		/*}catch(RecognitionException e){
 			System.out.println("Some errors where found in the parsing process");

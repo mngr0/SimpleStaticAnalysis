@@ -3,6 +3,8 @@ package models;
 import java.util.LinkedList;
 import java.util.List;
 
+import models.behavior.BTAtom;
+import models.behavior.BTBase;
 import util.Strings;
 
 public class SimpleStmtDelete extends SimpleStmt {
@@ -35,6 +37,19 @@ public class SimpleStmtDelete extends SimpleStmt {
 			e.deleteVariable(id);
 		
 		return result;
+	}
+
+	@Override
+	public BTBase inferBehavior(Environment e) {
+		int cost = 0;
+		//if the variable exist this will have a cost of -1
+		if(e.containsVariable(id))
+			cost = -1;
+		
+		//put the variable in the current scope with the current value
+		e.deleteVariable(id);
+		
+		return new BTAtom(cost);
 	}
 
 }

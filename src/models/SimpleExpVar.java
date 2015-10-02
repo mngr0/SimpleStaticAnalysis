@@ -35,7 +35,7 @@ public class SimpleExpVar extends SimpleExp {
 	@Override
 	public int getValue(Environment e) {
 		
-		return 0;
+		return e.getVariableValue(id);
 	}
 
 }
