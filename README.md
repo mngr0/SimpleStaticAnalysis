@@ -58,6 +58,24 @@ First analysis approach will check for correct variable usage, this means, (i) a
 
 The branch <code>SemanticAnalysis</code> of the repository records the project state up to this task. 
 
+<h2>Example</h2>
+```csharp
+{
+ 	a = 4; //variable a has value 4
+	b = 4; //variable b has value 4 
+	c = d + a; //ERROR: variable d doesn't exist
+	{
+		a = 2; //a is redefined
+		print a; //value 2 has been recorded
+		delete a; //a has been deleted
+		delete b; //b has been deleted
+		print a; //value 4 has been recorded
+		print b; //ERROR: variable b has been deleted
+	}
+	delete a; //a has been deleted
+}
+```
+
 # Behavior Inference
 A more complicated analysis checks the behavior of a <code>SIMPLE</code> code. The aim is to extract a tuple in the form <code>[max, total, {<i>prints</i>}]</code> where:
 
@@ -68,3 +86,26 @@ total|<i>is the number of variables that remains undeleted after the end</i>
 prints|<i>is the set of values that have been recorded through the </i><code>print</code> <i>operation</i>
 
 The branch <code>Inference</code> of the repository records the project state up to this task. 
+
+<h2>Example</h2>
+```csharp
+{
+ 	a = 4; //[1, 1, {}] -> one variable added
+	print a + 2; //[1, 1, {6}] -> value 6 recorded
+	{
+		a = 2; //[2, 2, {6}] -> one variable added
+		print a; //[2, 2, {6,2}] -> value 2 recorded
+		delete a; //[2, 1, {6,2}] -> one variable removed
+		print a; //[2, 1, {6,2,4}] -> value 4 recorded
+	}
+	delete a; //[2, 0, {6,2,4}] -> one variable removed
+	b = 4; //[2, 1, {6,2,4}] -> one variable added
+	print b * 2 + 4; //[2, 1, {6,2,4,12}] -> value 12 recorded
+	
+	
+	//FINAL [2, 1, {6,2,4,12}]
+	//maximum coexisting variables: 2
+	//variables non deleted: 1
+	//recorded values: 6, 2, 4 and 12
+}
+```
