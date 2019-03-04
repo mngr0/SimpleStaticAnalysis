@@ -16,6 +16,7 @@ import models.behavior.BTBlock;
 import org.antlr.v4.runtime.ANTLRInputStream;
 import org.antlr.v4.runtime.CommonTokenStream;
 
+import parser.Listener;
 import parser.SimpleLexer;
 import parser.SimpleParser;
 
@@ -35,7 +36,18 @@ public class Analyse {
 			//create parser
 			CommonTokenStream tokens = new CommonTokenStream(lexer);
 			SimpleParser parser = new SimpleParser(tokens);
-			
+
+
+			//listener
+			Listener listener = new Listener();
+			parser.removeParseListeners();
+			parser.addErrorListener(listener);
+			lexer.removeErrorListeners();
+			lexer.addErrorListener(listener);
+
+
+
+
 			//tell the parser to build the AST
 			parser.setBuildParseTree(true);
 			
