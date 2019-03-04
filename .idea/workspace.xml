@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9de56ee3-3ac7-4c66-a84c-8d1ea0907991" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/analyser/Analyse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/analyser/Analyse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/parser/Listener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/parser/Listener.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test.spl" beforeDir="false" afterPath="$PROJECT_DIR$/test.spl" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/bin/" />
@@ -30,11 +27,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test.spl">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="8" selection-start-column="8" selection-end-column="8" />
+              <caret column="9" selection-start-column="9" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -44,7 +41,7 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/parser/Listener.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="225">
@@ -75,8 +72,8 @@
       <list>
         <option value="$PROJECT_DIR$/src/parser/.gitignore" />
         <option value="$PROJECT_DIR$/src/parser/Listener.java" />
-        <option value="$PROJECT_DIR$/test.spl" />
         <option value="$PROJECT_DIR$/src/analyser/Analyse.java" />
+        <option value="$PROJECT_DIR$/test.spl" />
       </list>
     </option>
   </component>
@@ -146,7 +143,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551697818759" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551697849399" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../SimpleStaticAnalysisBase" />
   </component>
   <component name="RunDashboard">
@@ -242,20 +239,20 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9443000" />
+    <option name="totallyTimeSpent" value="9474000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="77" y="47" width="1279" height="701" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27656123" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27656123" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Messages" weight="0.32867134" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32867134" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32867134" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -289,13 +286,6 @@
     <entry file="file://$PROJECT_DIR$/bin/parser/.gitignore">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/test.spl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="8" selection-start-column="8" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/analyser/Analyse.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="215">
@@ -312,6 +302,13 @@
             <element signature="e#379#380#0" expanded="true" />
             <element signature="e#408#409#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.spl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="9" selection-start-column="9" selection-end-column="9" />
         </state>
       </provider>
     </entry>
