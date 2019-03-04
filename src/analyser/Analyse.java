@@ -46,8 +46,6 @@ public class Analyse {
 			lexer.addErrorListener(listener);
 
 
-
-
 			//tell the parser to build the AST
 			parser.setBuildParseTree(true);
 			
@@ -56,7 +54,7 @@ public class Analyse {
 			
 			//visit the root, this will recursively visit the whole tree
 			SimpleStmtBlock mainBlock = (SimpleStmtBlock) visitor.visitBlock(parser.block());
-			
+
 			//check semantics
 			//give a fresh environment, no need to make it persist
 			//this is just semantic checking
