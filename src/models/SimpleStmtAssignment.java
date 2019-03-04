@@ -33,7 +33,7 @@ public class SimpleStmtAssignment extends SimpleStmt{
 	@Override
 	public BTBase inferBehavior(Environment e) {
 		int cost = 0;
-		//if the variable doesnt exist in the current scope then 
+		//if the variable doesn't exist in the current scope then 
 		//it has a cost equals to 1
 		if(e.getVariableValueLocal(id) == null)
 			cost = 1;

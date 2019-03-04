@@ -23,22 +23,15 @@ public class Analyse {
 
 	public static void main(String[] args) {
 		
-		//read the input file from arguments or simply read it from console input
-		String inputFile = null;
-		if (args.length > 0)
-			inputFile = args[0];
-		InputStream is = System.in;
+		String fileName = "test.spl";
 		
-		
-		try{
-			if (inputFile != null)
-				is = new FileInputStream(inputFile);
-			
-			//this is the input stream for ANTLR
+		try{   
+			FileInputStream is = new FileInputStream(fileName);
 			ANTLRInputStream input = new ANTLRInputStream(is);
-			
+
 			//create lexer
 			SimpleLexer lexer = new SimpleLexer(input);
+			
 			//create parser
 			CommonTokenStream tokens = new CommonTokenStream(lexer);
 			SimpleParser parser = new SimpleParser(tokens);
@@ -79,6 +72,7 @@ public class Analyse {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+
 	}
 
 }
