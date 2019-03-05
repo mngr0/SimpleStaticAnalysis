@@ -2,7 +2,6 @@ package analyser;
 
 import java.io.FileInputStream;
 import java.io.IOException;
-import java.io.InputStream;
 import java.util.List;
 
 import models.Environment;
@@ -16,7 +15,7 @@ import models.behavior.BTBlock;
 import org.antlr.v4.runtime.ANTLRInputStream;
 import org.antlr.v4.runtime.CommonTokenStream;
 
-import parser.Listener;
+import project0.Listener;
 import parser.SimpleLexer;
 import parser.SimpleParser;
 
@@ -39,13 +38,9 @@ public class Analyse {
 
 
 			//listener
-			Listener listener = new Listener();
 			parser.removeParseListeners();
-			parser.addErrorListener(listener);
 			lexer.removeErrorListeners();
-			lexer.addErrorListener(listener);
-			//lexer.getAllTokens();
-
+			
 			//tell the parser to build the AST
 			parser.setBuildParseTree(true);
 			

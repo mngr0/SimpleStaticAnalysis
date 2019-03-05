@@ -1,4 +1,4 @@
-package parser;
+package project0;
 
 import org.antlr.v4.runtime.*;
 import org.antlr.v4.runtime.atn.ATNConfigSet;
@@ -6,7 +6,6 @@ import org.antlr.v4.runtime.dfa.DFA;
 
 import java.util.ArrayList;
 import java.util.BitSet;
-import java.util.Collections;
 import java.util.List;
 
 public class Listener extends BaseErrorListener {
@@ -19,11 +18,7 @@ public class Listener extends BaseErrorListener {
 
     @Override
     public void syntaxError(Recognizer<?, ?> recognizer, Object problem, int line, int positionInLine, String msg, RecognitionException e) {
-        //System.out.printf("Error at line %d, position %d : %s\n",i,i1,s);
-        //List<String> stack = ((Parser)recognizer).getRuleInvocationStack();
-        //Collections.reverse(stack);
         errors.add(problem);
-        //System.err.println("rule stack: "+stack);
         System.err.println("line "+line+":"+positionInLine+" at "+
                 problem+": "+msg);
     }
