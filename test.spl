@@ -1,4 +1,4 @@
-{ a = 7 ; c = 34 + 190 ; b = a+2 ; delete a ; print b ; print c ;}
+{ a = 7 ; c != 34 + 190 ; b = a+2 ; delete a ; print b ; print c ;}
 
 /*
 

@@ -44,7 +44,7 @@ public class Analyse {
 			parser.addErrorListener(listener);
 			lexer.removeErrorListeners();
 			lexer.addErrorListener(listener);
-
+			//lexer.getAllTokens();
 
 			//tell the parser to build the AST
 			parser.setBuildParseTree(true);

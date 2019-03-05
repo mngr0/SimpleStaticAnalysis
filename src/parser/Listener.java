@@ -20,10 +20,10 @@ public class Listener extends BaseErrorListener {
     @Override
     public void syntaxError(Recognizer<?, ?> recognizer, Object problem, int line, int positionInLine, String msg, RecognitionException e) {
         //System.out.printf("Error at line %d, position %d : %s\n",i,i1,s);
-        List<String> stack = ((Parser)recognizer).getRuleInvocationStack();
-        Collections.reverse(stack);
+        //List<String> stack = ((Parser)recognizer).getRuleInvocationStack();
+        //Collections.reverse(stack);
         errors.add(problem);
-        System.err.println("rule stack: "+stack);
+        //System.err.println("rule stack: "+stack);
         System.err.println("line "+line+":"+positionInLine+" at "+
                 problem+": "+msg);
     }
