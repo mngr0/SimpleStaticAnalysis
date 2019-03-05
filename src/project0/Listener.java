@@ -10,17 +10,16 @@ import java.util.List;
 
 public class Listener extends BaseErrorListener {
 
-    private List<Object> errors= new ArrayList<>();
+    private List<String> errors= new ArrayList<>();
 
-    public List<Object> getErrors() {
+    public List<String> getErrors() {
         return errors;
     }
 
     @Override
     public void syntaxError(Recognizer<?, ?> recognizer, Object problem, int line, int positionInLine, String msg, RecognitionException e) {
-        errors.add(problem);
-        System.err.println("line "+line+":"+positionInLine+" at "+
-                problem+": "+msg);
+        errors.add(msg);
+        System.err.println("\n"+ msg + " in line "+line+" position "+positionInLine);
     }
 
     @Override
