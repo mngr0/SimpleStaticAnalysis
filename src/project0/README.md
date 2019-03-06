@@ -1,5 +1,8 @@
 #Project0
 
+##Group
+Il gruppo è formato da Simone Berni e Marco Negrini
+
 ##Analyse0
 
 Analyse0 sostituisce il file "Analyse" nel package "analyser".
