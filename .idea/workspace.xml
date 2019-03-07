@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9de56ee3-3ac7-4c66-a84c-8d1ea0907991" name="Default Changelist" comment="" />
+    <list default="true" id="9de56ee3-3ac7-4c66-a84c-8d1ea0907991" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/project0/Analyse0.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/project0/Analyse0.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/project0/Listener.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/project0/Listener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/project0/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/bin/project0/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/project0/Analyse0.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/project0/Analyse0.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/project0/Listener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/project0/Listener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/project0/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/project0/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.spl" beforeDir="false" afterPath="$PROJECT_DIR$/test.spl" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/bin/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,8 +23,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/analyser/Analyse.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="157">
-              <caret line="18" column="27" lean-forward="true" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
+            <state relative-caret-position="30">
+              <caret line="18" column="27" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -26,8 +35,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/project0/Analyse0.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="331">
-              <caret line="27" selection-start-line="27" selection-end-line="27" />
+            <state relative-caret-position="256">
+              <caret line="27" column="35" selection-start-line="27" selection-start-column="35" selection-end-line="27" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -38,17 +47,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test.spl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+            <state>
+              <caret column="36" selection-start-column="36" selection-end-column="36" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/project0/Listener.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="21" column="60" lean-forward="true" selection-start-line="21" selection-start-column="60" selection-end-line="21" selection-end-column="60" />
+            <state relative-caret-position="121">
+              <caret line="18" column="47" selection-start-line="18" selection-start-column="47" selection-end-line="18" selection-end-column="47" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -56,12 +65,12 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/project0/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="195">
-                <caret line="13" column="113" selection-start-line="13" selection-start-column="113" selection-end-line="13" selection-end-column="113" />
+              <first_editor relative-caret-position="180">
+                <caret line="12" column="81" selection-start-line="12" selection-start-column="81" selection-end-line="12" selection-end-column="81" />
               </first_editor>
               <second_editor />
             </state>
@@ -78,13 +87,13 @@
       <list>
         <option value="$PROJECT_DIR$/src/parser/.gitignore" />
         <option value="$PROJECT_DIR$/bin/parser/.gitignore" />
-        <option value="$PROJECT_DIR$/test.spl" />
         <option value="$PROJECT_DIR$/src/parser/Listener.java" />
         <option value="$PROJECT_DIR$/src/analyser/Analyse0.java" />
-        <option value="$PROJECT_DIR$/src/project0/Analyse0.java" />
-        <option value="$PROJECT_DIR$/src/project0/README.md" />
         <option value="$PROJECT_DIR$/src/analyser/Analyse.java" />
+        <option value="$PROJECT_DIR$/src/project0/Analyse0.java" />
+        <option value="$PROJECT_DIR$/test.spl" />
         <option value="$PROJECT_DIR$/src/project0/Listener.java" />
+        <option value="$PROJECT_DIR$/src/project0/README.md" />
       </list>
     </option>
   </component>
@@ -99,6 +108,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -155,7 +165,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -223,16 +232,18 @@
       <workItem from="1551784771641" duration="779000" />
       <workItem from="1551795035805" duration="1345000" />
       <workItem from="1551796520022" duration="356000" />
+      <workItem from="1551972850764" duration="1390000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2882000" />
+    <option name="totallyTimeSpent" value="4272000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1299" height="743" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2905028" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2952913" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -241,7 +252,7 @@
       <window_info id="UI Designer" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32736155" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32736155" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -354,8 +365,8 @@
     <entry file="file://$PROJECT_DIR$/bin/analyser/Analyse0.class" />
     <entry file="file://$PROJECT_DIR$/src/analyser/Analyse.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="18" column="27" lean-forward="true" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
+        <state relative-caret-position="30">
+          <caret line="18" column="27" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -364,25 +375,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test.spl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/project0/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="195">
-            <caret line="13" column="113" selection-start-line="13" selection-start-column="113" selection-end-line="13" selection-end-column="113" />
-          </first_editor>
-          <second_editor />
+        <state>
+          <caret column="36" selection-start-column="36" selection-end-column="36" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/project0/Analyse0.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="331">
-          <caret line="27" selection-start-line="27" selection-end-line="27" />
+        <state relative-caret-position="256">
+          <caret line="27" column="35" selection-start-line="27" selection-start-column="35" selection-end-line="27" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -391,11 +392,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/project0/Listener.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="21" column="60" lean-forward="true" selection-start-line="21" selection-start-column="60" selection-end-line="21" selection-end-column="60" />
+        <state relative-caret-position="121">
+          <caret line="18" column="47" selection-start-line="18" selection-start-column="47" selection-end-line="18" selection-end-column="47" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/project0/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="180">
+            <caret line="12" column="81" selection-start-line="12" selection-start-column="81" selection-end-line="12" selection-end-column="81" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>

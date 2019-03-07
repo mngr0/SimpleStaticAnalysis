@@ -1,0 +1,2 @@
+token recognition error at: '!' in line 1 position 12
+token recognition error at: '#' in line 1 position 35

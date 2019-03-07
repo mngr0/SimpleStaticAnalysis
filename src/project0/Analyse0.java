@@ -25,7 +25,7 @@ public class Analyse0 {
             lexer.removeErrorListeners();
             lexer.addErrorListener(listener);
             lexer.getAllTokens();
-
+            listener.writeErrors();
         } catch (IOException e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
