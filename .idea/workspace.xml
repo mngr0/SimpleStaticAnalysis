@@ -1,29 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9de56ee3-3ac7-4c66-a84c-8d1ea0907991" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/analyser/Analyse.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/analyser/Analyse.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/parser/Simple.g4" beforeDir="false" afterPath="$PROJECT_DIR$/bin/parser/Simple.g4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/parser/SimpleParser$AssignmentContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/parser/SimpleParser$AssignmentContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/parser/SimpleParser$BaseExpContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/parser/SimpleParser$BaseExpContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/parser/SimpleParser$BinExpContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/parser/SimpleParser$BinExpContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/parser/SimpleParser$BlockContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/parser/SimpleParser$BlockContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/parser/SimpleParser$DeletionContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/parser/SimpleParser$DeletionContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/parser/SimpleParser$ExpContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/parser/SimpleParser$ExpContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/parser/SimpleParser$NegExpContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/parser/SimpleParser$NegExpContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/parser/SimpleParser$PrintContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/parser/SimpleParser$PrintContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/parser/SimpleParser$StatementContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/parser/SimpleParser$StatementContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/parser/SimpleParser$ValExpContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/parser/SimpleParser$ValExpContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/parser/SimpleParser$VarExpContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/parser/SimpleParser$VarExpContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/parser/SimpleParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/parser/SimpleParser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/project0/Analyse0.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/project0/Analyse0.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/analyser/Analyse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/analyser/Analyse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/parser/Simple.g4" beforeDir="false" afterPath="$PROJECT_DIR$/src/parser/Simple.g4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/parser/SimpleParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/parser/SimpleParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/project0/Analyse0.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/project0/Analyse0.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.spl" beforeDir="false" afterPath="$PROJECT_DIR$/test.spl" afterDir="false" />
-    </list>
+    <list default="true" id="9de56ee3-3ac7-4c66-a84c-8d1ea0907991" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/bin/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -319,12 +297,12 @@
       <workItem from="1552248339973" duration="402000" />
       <workItem from="1552995235400" duration="2773000" />
       <workItem from="1553511177052" duration="4637000" />
-      <workItem from="1553527277927" duration="277000" />
+      <workItem from="1553527277927" duration="520000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13218000" />
+    <option name="totallyTimeSpent" value="13461000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1213" height="695" extended-state="6" />

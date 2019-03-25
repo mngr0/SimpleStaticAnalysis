@@ -32,7 +32,7 @@ parameter   : declaration           //TODO
 
 function    : 'func' ID '('(parameter(',' parameter)* ) ')' block  ;        //TODO
 
-ifthenelse  : 'if' exp  block ('elif' exp block)* ('else' exp block)*; //TODO
+ifthenelse  : 'if' exp  block ('elif' exp block)* ('else' block)*; //TODO
 
 
 exp			: '(' exp ')'							#baseExp
