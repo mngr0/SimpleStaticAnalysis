@@ -4,10 +4,7 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.List;
 
-import models.Environment;
-import models.SemanticError;
-import models.SimpleStmtBlock;
-import models.SimpleVisitorImpl;
+import models.*;
 
 
 import models.behavior.BTBlock;
@@ -45,8 +42,9 @@ public class Analyse {
 			
 			//build custom visitor
 			SimpleVisitorImpl visitor = new SimpleVisitorImpl();
-			
+
 			//visit the root, this will recursively visit the whole tree
+
 			SimpleStmtBlock mainBlock = (SimpleStmtBlock) visitor.visitBlock(parser.block());
 
 			//check semantics
@@ -68,6 +66,7 @@ public class Analyse {
 				
 				System.out.println(res.toString());
 			}
+
 		/*}catch(RecognitionException e){
 			System.out.println("Some errors where found in the parsing process");
 			System.out.println(e.getMessage());

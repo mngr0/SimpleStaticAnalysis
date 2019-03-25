@@ -27,6 +27,9 @@ public class SimpleParser extends Parser {
 	public static final int
 		RULE_block = 0, RULE_statement = 1, RULE_assignment = 2, RULE_deletion = 3, 
 		RULE_print = 4, RULE_exp = 5;
+
+
+
 	public static final String[] ruleNames = {
 		"block", "statement", "assignment", "deletion", "print", "exp"
 	};

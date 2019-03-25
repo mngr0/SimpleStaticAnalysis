@@ -14,7 +14,6 @@ public class Analyse0 {
         try{
             FileInputStream is = new FileInputStream(fileName);
             ANTLRInputStream input = new ANTLRInputStream(is);
-
             //create lexer
             SimpleLexer lexer = new SimpleLexer(input);
 
@@ -26,6 +25,7 @@ public class Analyse0 {
             lexer.addErrorListener(listener);
             lexer.getAllTokens();
             listener.writeErrors();
+
         } catch (IOException e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
