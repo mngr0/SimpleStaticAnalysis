@@ -1,6 +1,5 @@
-// Generated from Simple.g4 by ANTLR 4.4
+// Generated from /home/simone/Projects/SimpleStaticAnalysis/src/parser/Simple.g4 by ANTLR 4.7.2
 package parser;
-import org.antlr.v4.runtime.misc.NotNull;
 import org.antlr.v4.runtime.tree.ParseTreeVisitor;
 
 /**
@@ -12,68 +11,105 @@ import org.antlr.v4.runtime.tree.ParseTreeVisitor;
  */
 public interface SimpleVisitor<T> extends ParseTreeVisitor<T> {
 	/**
+	 * Visit a parse tree produced by {@link SimpleParser#block}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitBlock(SimpleParser.BlockContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link SimpleParser#statement}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitStatement(SimpleParser.StatementContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link SimpleParser#deletion}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitDeletion(SimpleParser.DeletionContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link SimpleParser#print}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitPrint(SimpleParser.PrintContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link SimpleParser#assignment}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitAssignment(SimpleParser.AssignmentContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link SimpleParser#declaration}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitDeclaration(SimpleParser.DeclarationContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link SimpleParser#type}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitType(SimpleParser.TypeContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link SimpleParser#parameter}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitParameter(SimpleParser.ParameterContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link SimpleParser#function}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitFunction(SimpleParser.FunctionContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link SimpleParser#ifthenelse}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitIfthenelse(SimpleParser.IfthenelseContext ctx);
+	/**
 	 * Visit a parse tree produced by the {@code baseExp}
 	 * labeled alternative in {@link SimpleParser#exp}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
-	T visitBaseExp(@NotNull SimpleParser.BaseExpContext ctx);
+	T visitBaseExp(SimpleParser.BaseExpContext ctx);
 	/**
 	 * Visit a parse tree produced by the {@code varExp}
 	 * labeled alternative in {@link SimpleParser#exp}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
-	T visitVarExp(@NotNull SimpleParser.VarExpContext ctx);
-	/**
-	 * Visit a parse tree produced by {@link SimpleParser#print}.
-	 * @param ctx the parse tree
-	 * @return the visitor result
-	 */
-	T visitPrint(@NotNull SimpleParser.PrintContext ctx);
+	T visitVarExp(SimpleParser.VarExpContext ctx);
 	/**
 	 * Visit a parse tree produced by the {@code binExp}
 	 * labeled alternative in {@link SimpleParser#exp}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
-	T visitBinExp(@NotNull SimpleParser.BinExpContext ctx);
-	/**
-	 * Visit a parse tree produced by {@link SimpleParser#deletion}.
-	 * @param ctx the parse tree
-	 * @return the visitor result
-	 */
-	T visitDeletion(@NotNull SimpleParser.DeletionContext ctx);
-	/**
-	 * Visit a parse tree produced by {@link SimpleParser#assignment}.
-	 * @param ctx the parse tree
-	 * @return the visitor result
-	 */
-	T visitAssignment(@NotNull SimpleParser.AssignmentContext ctx);
-	/**
-	 * Visit a parse tree produced by {@link SimpleParser#statement}.
-	 * @param ctx the parse tree
-	 * @return the visitor result
-	 */
-	T visitStatement(@NotNull SimpleParser.StatementContext ctx);
+	T visitBinExp(SimpleParser.BinExpContext ctx);
 	/**
 	 * Visit a parse tree produced by the {@code valExp}
 	 * labeled alternative in {@link SimpleParser#exp}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
-	T visitValExp(@NotNull SimpleParser.ValExpContext ctx);
+	T visitValExp(SimpleParser.ValExpContext ctx);
 	/**
 	 * Visit a parse tree produced by the {@code negExp}
 	 * labeled alternative in {@link SimpleParser#exp}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
-	T visitNegExp(@NotNull SimpleParser.NegExpContext ctx);
+	T visitNegExp(SimpleParser.NegExpContext ctx);
 	/**
-	 * Visit a parse tree produced by {@link SimpleParser#block}.
+	 * Visit a parse tree produced by the {@code boolExp}
+	 * labeled alternative in {@link SimpleParser#exp}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
-	T visitBlock(@NotNull SimpleParser.BlockContext ctx);
+	T visitBoolExp(SimpleParser.BoolExpContext ctx);
 }

@@ -34,8 +34,8 @@ public class Analyse {
 
 
 			//listener
-			parser.removeParseListeners();
-			lexer.removeErrorListeners();
+			//parser.removeParseListeners();
+			//lexer.removeErrorListeners();
 
 			//tell the parser to build the AST
 			parser.setBuildParseTree(true);

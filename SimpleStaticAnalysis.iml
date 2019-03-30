@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module type="JAVA_MODULE" version="4">
   <component name="EclipseModuleManager">
-    <libelement value="jar://$MODULE_DIR$/lib/antlr-4.6-complete.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/antlr-4.7.2-complete.jar!/" />
     <src_description expected_position="0">
       <src_folder value="file://$MODULE_DIR$/src" expected_position="0" />
     </src_description>
@@ -14,9 +14,9 @@
     </content>
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module-library">
-      <library name="antlr-4.6-complete.jar">
+      <library name="antlr-4.7.2-complete.jar">
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/lib/antlr-4.6-complete.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/antlr-4.7.2-complete.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />

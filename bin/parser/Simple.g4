@@ -12,14 +12,16 @@ statement	: assignment ';'
             | ifthenelse        //TODO
 			| block;
 
-assignment	: ID '=' exp ;
-
 deletion	: 'delete' ID;
 
 print		: 'print' exp;
 
+assignment	: ID '=' exp ;
+
+
 declaration : type ID //TODO
             | type assignment; //TODO
+
 
 type        : 'bool'    //TODO
             | 'int';    //TODO
@@ -28,9 +30,9 @@ parameter   : declaration           //TODO
             | 'var' ID              //TODO
             | 'var' assignment;     //TODO
 
-function    : 'func' ID '('(parameter(',' parameter)* ) ')' block  ;        //TODO MANCA IL NOME
+function    : 'def' ID '('(parameter(',' parameter)* ) ')' block  ;        //TODO
 
-ifthenelse  : 'if' exp  block ('elif' exp block)* ('else' exp block)*; //TODO
+ifthenelse  : 'if' exp  block ('elif' exp block)* ('else' block)*; //TODO
 
 
 exp			: '(' exp ')'							#baseExp

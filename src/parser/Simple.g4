@@ -30,7 +30,7 @@ parameter   : declaration           //TODO
             | 'var' ID              //TODO
             | 'var' assignment;     //TODO
 
-function    : 'func' ID '('(parameter(',' parameter)* ) ')' block  ;        //TODO
+function    : 'def' ID '('(parameter(',' parameter)* ) ')' block  ;        //TODO
 
 ifthenelse  : 'if' exp  block ('elif' exp block)* ('else' block)*; //TODO
 

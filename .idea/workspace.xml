@@ -1,7 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9de56ee3-3ac7-4c66-a84c-8d1ea0907991" name="Default Changelist" comment="" />
+    <list default="true" id="9de56ee3-3ac7-4c66-a84c-8d1ea0907991" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SimpleStaticAnalysis.iml" beforeDir="false" afterPath="$PROJECT_DIR$/SimpleStaticAnalysis.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/analyser/Analyse.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/analyser/Analyse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/models/SimpleVisitorImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/models/SimpleVisitorImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/parser/Simple.g4" beforeDir="false" afterPath="$PROJECT_DIR$/bin/parser/Simple.g4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/parser/Simple.tokens" beforeDir="false" afterPath="$PROJECT_DIR$/bin/parser/Simple.tokens" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/parser/SimpleBaseListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/parser/SimpleBaseListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/parser/SimpleBaseVisitor.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/parser/SimpleBaseVisitor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/parser/SimpleLexer.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/parser/SimpleLexer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/parser/SimpleLexer.tokens" beforeDir="false" afterPath="$PROJECT_DIR$/bin/parser/SimpleLexer.tokens" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/parser/SimpleListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/parser/SimpleListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/parser/SimpleParser$AssignmentContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/parser/SimpleParser$AssignmentContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/parser/SimpleParser$BaseExpContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/parser/SimpleParser$BaseExpContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/parser/SimpleParser$BinExpContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/parser/SimpleParser$BinExpContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/parser/SimpleParser$BlockContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/parser/SimpleParser$BlockContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/parser/SimpleParser$DeletionContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/parser/SimpleParser$DeletionContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/parser/SimpleParser$ExpContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/parser/SimpleParser$ExpContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/parser/SimpleParser$NegExpContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/parser/SimpleParser$NegExpContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/parser/SimpleParser$PrintContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/parser/SimpleParser$PrintContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/parser/SimpleParser$StatementContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/parser/SimpleParser$StatementContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/parser/SimpleParser$ValExpContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/parser/SimpleParser$ValExpContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/parser/SimpleParser$VarExpContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/parser/SimpleParser$VarExpContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/parser/SimpleParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/parser/SimpleParser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/parser/SimpleVisitor.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/parser/SimpleVisitor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/analyser/Analyse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/analyser/Analyse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/parser/Simple.g4" beforeDir="false" afterPath="$PROJECT_DIR$/src/parser/Simple.g4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/parser/Simple.tokens" beforeDir="false" afterPath="$PROJECT_DIR$/src/parser/Simple.tokens" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/parser/SimpleBaseListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/parser/SimpleBaseListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/parser/SimpleBaseVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/parser/SimpleBaseVisitor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/parser/SimpleLexer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/parser/SimpleLexer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/parser/SimpleLexer.tokens" beforeDir="false" afterPath="$PROJECT_DIR$/src/parser/SimpleLexer.tokens" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/parser/SimpleListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/parser/SimpleListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/parser/SimpleParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/parser/SimpleParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/parser/SimpleVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/parser/SimpleVisitor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.spl" beforeDir="false" afterPath="$PROJECT_DIR$/test.spl" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/bin/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -11,65 +47,32 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/parser/Simple.g4">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="104">
-              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+            <state relative-caret-position="210">
+              <caret line="32" column="18" selection-start-line="32" selection-start-column="18" selection-end-line="32" selection-end-column="18" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/models/SimpleExp.java">
+        <entry file="file://$PROJECT_DIR$/src/analyser/Analyse.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+            <state relative-caret-position="194">
+              <caret line="45" column="44" selection-start-line="45" selection-start-column="44" selection-end-line="45" selection-end-column="44" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/models/SimpleExpDiff.java">
+        <entry file="file://$PROJECT_DIR$/SimpleStaticAnalysis.iml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/models/behavior/BTAtom.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/models/behavior/BTBase.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-296">
-              <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/models/SimpleExpVar.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/models/SimpleVisitorImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="102" column="59" lean-forward="true" selection-start-line="102" selection-start-column="59" selection-end-line="102" selection-end-column="59" />
+            <state relative-caret-position="270">
+              <caret line="18" column="55" selection-start-line="18" selection-start-column="55" selection-end-line="18" selection-end-column="55" />
             </state>
           </provider>
         </entry>
@@ -77,20 +80,53 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/parser/SimpleParser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="25" column="6" selection-start-line="25" selection-start-column="6" selection-end-line="25" selection-end-column="6" />
+            <state relative-caret-position="-5390">
+              <caret line="25" column="4" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="4" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/project0/Listener.java">
+        <entry file="file://$PROJECT_DIR$/src/parser/SimpleLexer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="18" column="47" selection-start-line="18" selection-start-column="47" selection-end-line="18" selection-end-column="47" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="178">
+              <caret line="105" column="4" selection-start-line="105" selection-start-column="4" selection-end-line="105" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/project0/Analyse0.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="27" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/models/SimpleVisitorImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="795">
+              <caret line="96" column="8" selection-start-line="96" selection-start-column="8" selection-end-line="96" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test.spl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="12" selection-start-column="12" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/parser/SimpleListener.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="99">
+              <caret line="63" column="17" selection-start-line="63" selection-start-column="9" selection-end-line="63" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -113,6 +149,7 @@
     <findStrings>
       <find>&quot;print&quot;</find>
       <find>ciao</find>
+      <find>enterDec</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -129,9 +166,11 @@
         <option value="$PROJECT_DIR$/src/project0/README.md" />
         <option value="$PROJECT_DIR$/src/project0/Analyse0.java" />
         <option value="$PROJECT_DIR$/src/parser/SimpleParser.java" />
-        <option value="$PROJECT_DIR$/src/analyser/Analyse.java" />
-        <option value="$PROJECT_DIR$/test.spl" />
         <option value="$PROJECT_DIR$/src/models/SimpleExpSum.java" />
+        <option value="$PROJECT_DIR$/src/analyser/Analyse.java" />
+        <option value="$PROJECT_DIR$/src/parser/SimpleLexer.java" />
+        <option value="$PROJECT_DIR$/SimpleStaticAnalysis.iml" />
+        <option value="$PROJECT_DIR$/test.spl" />
         <option value="$PROJECT_DIR$/src/parser/Simple.g4" />
       </list>
     </option>
@@ -147,6 +186,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -163,12 +204,6 @@
               <item name="SimpleStaticAnalysis" type="b2602c69:ProjectViewProjectNode" />
               <item name="SimpleStaticAnalysis" type="462c0819:PsiDirectoryNode" />
               <item name="bin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SimpleStaticAnalysis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SimpleStaticAnalysis" type="462c0819:PsiDirectoryNode" />
-              <item name="bin" type="462c0819:PsiDirectoryNode" />
-              <item name="analyser" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SimpleStaticAnalysis" type="b2602c69:ProjectViewProjectNode" />
@@ -221,15 +256,22 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="$PROJECT_DIR$/src/parser/Simple.g4::/auto-gen" value="true" />
+    <property name="$PROJECT_DIR$/src/parser/Simple.g4::/gen-listener" value="true" />
+    <property name="$PROJECT_DIR$/src/parser/Simple.g4::/gen-visitor" value="true" />
+    <property name="$PROJECT_DIR$/src/parser/Simple.g4::/output-dir" value="$PROJECT_DIR$/src" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553522317787" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553980986247" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/lib" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -298,17 +340,19 @@
       <workItem from="1552995235400" duration="2773000" />
       <workItem from="1553511177052" duration="4637000" />
       <workItem from="1553527277927" duration="520000" />
+      <workItem from="1553973006107" duration="53000" />
+      <workItem from="1553980593213" duration="575000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13461000" />
+    <option name="totallyTimeSpent" value="14089000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1213" height="695" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.32819194" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3401885" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -317,7 +361,7 @@
       <window_info id="UI Designer" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32685512" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32685512" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -380,13 +424,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/SimpleStaticAnalysis.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="14" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -418,9 +455,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bin/analyser/Analyse.class">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/bin/analyser/Analyse.class" />
     <entry file="file://$PROJECT_DIR$/bin/parser/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -431,33 +466,6 @@
     <entry file="file://$PROJECT_DIR$/bin/parser/Listener.class" />
     <entry file="file://$PROJECT_DIR$/bin/analyser/Analyse0.class" />
     <entry file="file://$PROJECT_DIR$/SyntaxErrors.txt" />
-    <entry file="file://$PROJECT_DIR$/src/project0/Analyse0.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="16" column="12" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/analyser/Analyse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="795">
-          <caret line="66" selection-start-line="66" selection-end-line="66" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test.spl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="67" selection-start-column="67" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/models/SimpleExpSum.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -486,33 +494,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/project0/Listener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="18" column="47" selection-start-line="18" selection-start-column="47" selection-end-line="18" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/project0/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="330">
-            <caret line="22" column="24" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/parser/SimpleParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="25" column="6" selection-start-line="25" selection-start-column="6" selection-end-line="25" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/models/SimpleExp.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -536,7 +517,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/models/behavior/BTBase.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-296">
+        <state relative-caret-position="60">
           <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
         </state>
       </provider>
@@ -548,17 +529,89 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/models/SimpleVisitorImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/project0/Listener.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="102" column="59" lean-forward="true" selection-start-line="102" selection-start-column="59" selection-end-line="102" selection-end-column="59" />
+        <state relative-caret-position="270">
+          <caret line="18" column="47" selection-start-line="18" selection-start-column="47" selection-end-line="18" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/project0/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="330">
+            <caret line="22" column="24" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/analyser/Analyse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="45" column="44" selection-start-line="45" selection-start-column="44" selection-end-line="45" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/parser/SimpleListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="99">
+          <caret line="63" column="17" selection-start-line="63" selection-start-column="9" selection-end-line="63" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/parser/SimpleParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5390">
+          <caret line="25" column="4" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SimpleStaticAnalysis.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="55" selection-start-line="18" selection-start-column="55" selection-end-line="18" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/parser/SimpleLexer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="105" column="4" selection-start-line="105" selection-start-column="4" selection-end-line="105" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/project0/Analyse0.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="27" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/parser/Simple.g4">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+        <state relative-caret-position="210">
+          <caret line="32" column="18" selection-start-line="32" selection-start-column="18" selection-end-line="32" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/SimpleVisitorImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="795">
+          <caret line="96" column="8" selection-start-line="96" selection-start-column="8" selection-end-line="96" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.spl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="12" selection-start-column="12" selection-end-column="12" />
         </state>
       </provider>
     </entry>
