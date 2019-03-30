@@ -4,19 +4,39 @@ import java.util.LinkedList;
 import java.util.List;
 
 import parser.SimpleBaseVisitor;
-import parser.SimpleParser.AssignmentContext;
-import parser.SimpleParser.BaseExpContext;
-import parser.SimpleParser.BinExpContext;
-import parser.SimpleParser.BlockContext;
-import parser.SimpleParser.DeletionContext;
-import parser.SimpleParser.NegExpContext;
-import parser.SimpleParser.PrintContext;
-import parser.SimpleParser.StatementContext;
-import parser.SimpleParser.ValExpContext;
-import parser.SimpleParser.VarExpContext;
+import parser.SimpleParser;
+import parser.SimpleParser.*;
 
 public class SimpleVisitorImpl extends SimpleBaseVisitor<SimpleElementBase> {
-	
+
+	private int countFunctions = 0;
+
+	public int getCountFunctions() {
+		return countFunctions;
+	}
+
+	@Override
+	public SimpleElementBase visitFunction(FunctionContext ctx){
+		String ID = ctx.ID().getText();
+		List<ParameterContext> children = new LinkedList<>();
+
+		for(ParameterContext parameterContext : ctx.parameter()){
+		//	children.add( (SimpleStmt) visitParameter(parameterContext)); //TODO son veramente da visitare? Credo di si
+			//TODO perche' credo che possno essere creati in due modi
+		}
+		 SimpleStmtBlock block = (SimpleStmtBlock) visitBlock(ctx.block());
+		 countFunctions++;
+		// SimpleStmtFunction function = new SimpleStmtFunction(block,ID,children);
+		 //return function;
+		return block; //TODO da cavare e mettere l'altro una volta capito che cazzo fa
+	}
+
+	@Override
+	public SimpleElementBase visitParameter(ParameterContext ctx) {
+		//visit the first child, this works for every case
+		return visit(ctx.getChild(0)); //TODO not sure
+	}
+
 	@Override
 	public SimpleElementBase visitStatement(StatementContext ctx) {
 		//visit the first child, this works for every case

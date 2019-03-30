@@ -58,36 +58,6 @@ public interface SimpleListener extends ParseTreeListener {
 	 */
 	void exitAssignment(SimpleParser.AssignmentContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link SimpleParser#declaration}.
-	 * @param ctx the parse tree
-	 */
-	void enterDeclaration(SimpleParser.DeclarationContext ctx);
-	/**
-	 * Exit a parse tree produced by {@link SimpleParser#declaration}.
-	 * @param ctx the parse tree
-	 */
-	void exitDeclaration(SimpleParser.DeclarationContext ctx);
-	/**
-	 * Enter a parse tree produced by {@link SimpleParser#type}.
-	 * @param ctx the parse tree
-	 */
-	void enterType(SimpleParser.TypeContext ctx);
-	/**
-	 * Exit a parse tree produced by {@link SimpleParser#type}.
-	 * @param ctx the parse tree
-	 */
-	void exitType(SimpleParser.TypeContext ctx);
-	/**
-	 * Enter a parse tree produced by {@link SimpleParser#parameter}.
-	 * @param ctx the parse tree
-	 */
-	void enterParameter(SimpleParser.ParameterContext ctx);
-	/**
-	 * Exit a parse tree produced by {@link SimpleParser#parameter}.
-	 * @param ctx the parse tree
-	 */
-	void exitParameter(SimpleParser.ParameterContext ctx);
-	/**
 	 * Enter a parse tree produced by {@link SimpleParser#function}.
 	 * @param ctx the parse tree
 	 */
@@ -107,6 +77,36 @@ public interface SimpleListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitIfthenelse(SimpleParser.IfthenelseContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link SimpleParser#declaration}.
+	 * @param ctx the parse tree
+	 */
+	void enterDeclaration(SimpleParser.DeclarationContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link SimpleParser#declaration}.
+	 * @param ctx the parse tree
+	 */
+	void exitDeclaration(SimpleParser.DeclarationContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link SimpleParser#parameter}.
+	 * @param ctx the parse tree
+	 */
+	void enterParameter(SimpleParser.ParameterContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link SimpleParser#parameter}.
+	 * @param ctx the parse tree
+	 */
+	void exitParameter(SimpleParser.ParameterContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link SimpleParser#type}.
+	 * @param ctx the parse tree
+	 */
+	void enterType(SimpleParser.TypeContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link SimpleParser#type}.
+	 * @param ctx the parse tree
+	 */
+	void exitType(SimpleParser.TypeContext ctx);
 	/**
 	 * Enter a parse tree produced by the {@code baseExp}
 	 * labeled alternative in {@link SimpleParser#exp}.

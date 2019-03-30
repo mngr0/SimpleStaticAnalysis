@@ -12,27 +12,28 @@ statement	: assignment ';'
             | ifthenelse        //TODO
 			| block;
 
-deletion	: 'delete' ID;
+deletion	: DELETE ID;
 
-print		: 'print' exp;
+print		: PRINT exp;
 
 assignment	: ID '=' exp ;
 
+function    : DEF ID '('(parameter(',' parameter)* ) ')' block  ;        //TODO
+
+ifthenelse  : 'if' exp  block ('elif' exp block)* ('else' block)*; //TODO
 
 declaration : type ID //TODO
             | type assignment; //TODO
 
 
-type        : 'bool'    //TODO
-            | 'int';    //TODO
+
 
 parameter   : declaration           //TODO
-            | 'var' ID              //TODO
-            | 'var' assignment;     //TODO
+            | VAR ID;              //TODO
+    //        | 'var' assignment;     //TODO non sono sicuro che debba essere  accettabile
 
-function    : 'def' ID '('(parameter(',' parameter)* ) ')' block  ;        //TODO
-
-ifthenelse  : 'if' exp  block ('elif' exp block)* ('else' block)*; //TODO
+type        : BOOL    //TODO
+            | INT;    //TODO
 
 
 exp			: '(' exp ')'							#baseExp
@@ -50,6 +51,12 @@ exp			: '(' exp ')'							#baseExp
 
 //IDs
 fragment CHAR 	: 'a'..'z' |'A'..'Z' ;
+DEF             : 'def' ;
+DELETE          : 'delete';
+PRINT           : 'print';
+BOOL            : 'bool';
+INT             : 'int';
+VAR             : 'var';
 ID              : CHAR (CHAR | DIGIT)* ;
 
 //Numbers

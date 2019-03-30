@@ -59,6 +59,7 @@ public class Analyse {
 					System.out.println(err);
 			}else{
 				System.out.println("Check semantics succeded");
+				System.out.println("Number of functions: "+visitor.getCountFunctions()); //TODO nice, sono pigro
 				System.out.println("Calculating behavioral type");
 				
 				//give a fresh environment, no need to make it persist
@@ -72,7 +73,6 @@ public class Analyse {
 			System.out.println(e.getMessage());
 			System.out.println(e.getStackTrace());*/
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 

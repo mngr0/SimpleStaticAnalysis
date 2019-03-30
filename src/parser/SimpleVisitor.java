@@ -41,24 +41,6 @@ public interface SimpleVisitor<T> extends ParseTreeVisitor<T> {
 	 */
 	T visitAssignment(SimpleParser.AssignmentContext ctx);
 	/**
-	 * Visit a parse tree produced by {@link SimpleParser#declaration}.
-	 * @param ctx the parse tree
-	 * @return the visitor result
-	 */
-	T visitDeclaration(SimpleParser.DeclarationContext ctx);
-	/**
-	 * Visit a parse tree produced by {@link SimpleParser#type}.
-	 * @param ctx the parse tree
-	 * @return the visitor result
-	 */
-	T visitType(SimpleParser.TypeContext ctx);
-	/**
-	 * Visit a parse tree produced by {@link SimpleParser#parameter}.
-	 * @param ctx the parse tree
-	 * @return the visitor result
-	 */
-	T visitParameter(SimpleParser.ParameterContext ctx);
-	/**
 	 * Visit a parse tree produced by {@link SimpleParser#function}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
@@ -70,6 +52,24 @@ public interface SimpleVisitor<T> extends ParseTreeVisitor<T> {
 	 * @return the visitor result
 	 */
 	T visitIfthenelse(SimpleParser.IfthenelseContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link SimpleParser#declaration}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitDeclaration(SimpleParser.DeclarationContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link SimpleParser#parameter}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitParameter(SimpleParser.ParameterContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link SimpleParser#type}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitType(SimpleParser.TypeContext ctx);
 	/**
 	 * Visit a parse tree produced by the {@code baseExp}
 	 * labeled alternative in {@link SimpleParser#exp}.
