@@ -1,10 +1,13 @@
 package models;
 
+import models.behavior.BTBase;
+import models.behavior.BTBlock;
+
 import java.util.LinkedList;
 import java.util.List;
 
-public class SimpleStmtFunction/* extends SimpleStmt */{
-  /*
+public class SimpleStmtFunction extends SimpleStmt {
+
     SimpleStmtBlock block;
     List<SimpleParameter> parameters;
     String id;
@@ -44,18 +47,10 @@ public class SimpleStmtFunction/* extends SimpleStmt */{
 
         BTBlock current = null;
 
-        LinkedList<BTBase> behaviors = new LinkedList<BTBase>();
-        for(SimpleStmt el:children)
-            behaviors.push(el.inferBehavior(e));
-
-        for(BTBase b:behaviors){
-            current = BTBase.add(b,current);
-        }
-
         //close scope for this block
         e.closeScope();
 
         return current;
     }
-    */
+
 }

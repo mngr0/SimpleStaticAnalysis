@@ -1,32 +1,50 @@
 package models;
 
+import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Map;
 
 import parser.SimpleBaseVisitor;
-import parser.SimpleParser;
 import parser.SimpleParser.*;
 
 public class SimpleVisitorImpl extends SimpleBaseVisitor<SimpleElementBase> {
 
 	private int countFunctions = 0;
+	private Map<String,Integer> table = new HashMap<>();
+
+	public Map<String, Integer> getTable() {
+		return table;
+	}
 
 	public int getCountFunctions() {
 		return countFunctions;
 	}
 
+	private void addToTable(String ID){
+		try{
+			table.put(ID,table.get(ID)+1);
+
+		}catch (Exception e){
+			table.put(ID,1);
+
+		}
+	}
 	@Override
 	public SimpleElementBase visitFunction(FunctionContext ctx){
 		String ID = ctx.ID().getText();
-		List<ParameterContext> children = new LinkedList<>();
+
+		addToTable(ID); //TODO added to table
+
+		List<SimpleParameter> children = new LinkedList<SimpleParameter>();
 
 		for(ParameterContext parameterContext : ctx.parameter()){
-		//	children.add( (SimpleStmt) visitParameter(parameterContext)); //TODO son veramente da visitare? Credo di si
+			children.add( (SimpleParameter) visitParameter(parameterContext)); //TODO son veramente da visitare? Credo di si
 			//TODO perche' credo che possno essere creati in due modi
 		}
 		 SimpleStmtBlock block = (SimpleStmtBlock) visitBlock(ctx.block());
 		 countFunctions++;
-		// SimpleStmtFunction function = new SimpleStmtFunction(block,ID,children);
+//		 SimpleStmtFunction function = new SimpleStmtFunction(block,ID,children);
 		 //return function;
 		return block; //TODO da cavare e mettere l'altro una volta capito che cazzo fa
 	}
@@ -34,8 +52,30 @@ public class SimpleVisitorImpl extends SimpleBaseVisitor<SimpleElementBase> {
 	@Override
 	public SimpleElementBase visitParameter(ParameterContext ctx) {
 		//visit the first child, this works for every case
-		return visit(ctx.getChild(0)); //TODO not sure
+		if(ctx.VAR()!=null){
+			//TODO gestione delle var
+		}
+		return visitDeclaration(ctx.declaration()); //TODO not sure per un cazzo
+
 	}
+
+	@Override
+	public SimpleElementBase visitDeclaration(DeclarationContext ctx) {
+		//visit the first child, this works for every case
+		if(ctx.ID()!=null){ //TODO o c'e' ID o c' e' un assegnamento
+			String ID= ctx.ID().getText();
+			addToTable(ID);
+			return new SimpleStmtDeclaration(ID); //TODO trick per dirgli di non fare nulla
+		}
+		else{
+			SimpleStmtAssignment assignment =(SimpleStmtAssignment) visit(ctx.assignment());
+			addToTable(ctx.assignment().ID().getText());
+
+			return assignment;
+		}
+
+	}
+
 
 	@Override
 	public SimpleElementBase visitStatement(StatementContext ctx) {
@@ -47,10 +87,9 @@ public class SimpleVisitorImpl extends SimpleBaseVisitor<SimpleElementBase> {
 	public SimpleElementBase visitAssignment(AssignmentContext ctx) {
 		//get expression
 		SimpleExp exp = (SimpleExp) visit(ctx.exp());
-		
+
 		//get id of variable
 		String id = ctx.ID().getText();
-		
 		//construct assignment expression
 		SimpleStmtAssignment assign = new SimpleStmtAssignment(exp, id);
 		return assign;

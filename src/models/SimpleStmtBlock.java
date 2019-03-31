@@ -51,8 +51,12 @@ public class SimpleStmtBlock extends SimpleStmt {
 		BTBlock current = null;
 		
 		LinkedList<BTBase> behaviors = new LinkedList<BTBase>();
-		for(SimpleStmt el:children)
+		for(SimpleStmt el:children){
 			behaviors.push(el.inferBehavior(e));
+			System.out.println(el);
+		}
+
+
 		
 		for(BTBase b:behaviors){
 			current = BTBase.add(b,current);

@@ -179,4 +179,28 @@ public interface SimpleListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitBoolExp(SimpleParser.BoolExpContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code boolsExp}
+	 * labeled alternative in {@link SimpleParser#exp}.
+	 * @param ctx the parse tree
+	 */
+	void enterBoolsExp(SimpleParser.BoolsExpContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code boolsExp}
+	 * labeled alternative in {@link SimpleParser#exp}.
+	 * @param ctx the parse tree
+	 */
+	void exitBoolsExp(SimpleParser.BoolsExpContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code notExp}
+	 * labeled alternative in {@link SimpleParser#exp}.
+	 * @param ctx the parse tree
+	 */
+	void enterNotExp(SimpleParser.NotExpContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code notExp}
+	 * labeled alternative in {@link SimpleParser#exp}.
+	 * @param ctx the parse tree
+	 */
+	void exitNotExp(SimpleParser.NotExpContext ctx);
 }

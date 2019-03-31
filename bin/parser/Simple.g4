@@ -2,6 +2,7 @@ grammar Simple;
 
 // THIS IS THE PARSER INPUT 
 
+
 block		: '{' statement* '}';
 
 statement	: assignment ';'
@@ -18,7 +19,7 @@ print		: PRINT exp;
 
 assignment	: ID '=' exp ;
 
-function    : DEF ID '('(parameter(',' parameter)* ) ')' block  ;        //TODO
+function    : DEF ID '('(parameter(',' parameter)* )? ')' block  ;        //TODO
 
 ifthenelse  : 'if' exp  block ('elif' exp block)* ('else' block)*; //TODO
 
@@ -28,9 +29,7 @@ declaration : type ID //TODO
 
 
 
-parameter   : declaration           //TODO
-            | VAR ID;              //TODO
-    //        | 'var' assignment;     //TODO non sono sicuro che debba essere  accettabile
+parameter   : (VAR)? declaration;
 
 type        : BOOL    //TODO
             | INT;    //TODO
@@ -38,11 +37,13 @@ type        : BOOL    //TODO
 
 exp			: '(' exp ')'							#baseExp
 			| '-' exp								#negExp
+			| NOT exp                               #notExp
 			| left=exp op=('*' | '/') right=exp		#binExp
 			| left=exp op=('+' | '-') right=exp		#binExp
 			| left=exp op=('or' | 'and') right=exp	#boolExp //TODO
 			| ID 									#varExp
-		    | NUMBER								#valExp;
+		    | NUMBER								#valExp
+		    | BOOLS                                 #boolsExp; //TODO
 
 
 
@@ -57,6 +58,9 @@ PRINT           : 'print';
 BOOL            : 'bool';
 INT             : 'int';
 VAR             : 'var';
+BOOLS           : 'True'
+                | 'False';
+NOT             : 'not';
 ID              : CHAR (CHAR | DIGIT)* ;
 
 //Numbers

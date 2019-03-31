@@ -203,6 +203,30 @@ public class SimpleBaseListener implements SimpleListener {
 	 * <p>The default implementation does nothing.</p>
 	 */
 	@Override public void exitBoolExp(SimpleParser.BoolExpContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterBoolsExp(SimpleParser.BoolsExpContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitBoolsExp(SimpleParser.BoolsExpContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterNotExp(SimpleParser.NotExpContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitNotExp(SimpleParser.NotExpContext ctx) { }
 
 	/**
 	 * {@inheritDoc}

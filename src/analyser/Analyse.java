@@ -2,7 +2,9 @@ package analyser;
 
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import models.*;
 
@@ -50,7 +52,8 @@ public class Analyse {
 			//check semantics
 			//give a fresh environment, no need to make it persist
 			//this is just semantic checking
-			List<SemanticError> errors = mainBlock.checkSemantics(new Environment());
+			Environment e= new Environment();
+			List<SemanticError> errors = mainBlock.checkSemantics(e);
 			
 			//this means the semantic checker found some errors
 			if(errors.size() > 0){
@@ -60,6 +63,14 @@ public class Analyse {
 			}else{
 				System.out.println("Check semantics succeded");
 				System.out.println("Number of functions: "+visitor.getCountFunctions()); //TODO nice, sono pigro
+				boolean result=true;
+				for(Map.Entry<String,Integer> entry : visitor.getTable().entrySet()){
+					if(entry.getValue()>1){
+						result=false;
+					}
+				}
+				System.out.println("No repetitions of variables: "+ result);
+
 				System.out.println("Calculating behavioral type");
 				
 				//give a fresh environment, no need to make it persist

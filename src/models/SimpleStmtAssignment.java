@@ -35,9 +35,11 @@ public class SimpleStmtAssignment extends SimpleStmt{
 		int cost = 0;
 		//if the variable doesn't exist in the current scope then 
 		//it has a cost equals to 1
-		if(e.getVariableValueLocal(id) == null)
+		if(e.getVariableValueLocal(id) == null){
 			cost = 1;
-		
+			//TODO report error
+		}
+
 		//put the variable in the current scope with the current value
 		e.addVariable(id, exp.getValue(e));
 		

@@ -112,4 +112,18 @@ public interface SimpleVisitor<T> extends ParseTreeVisitor<T> {
 	 * @return the visitor result
 	 */
 	T visitBoolExp(SimpleParser.BoolExpContext ctx);
+	/**
+	 * Visit a parse tree produced by the {@code boolsExp}
+	 * labeled alternative in {@link SimpleParser#exp}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitBoolsExp(SimpleParser.BoolsExpContext ctx);
+	/**
+	 * Visit a parse tree produced by the {@code notExp}
+	 * labeled alternative in {@link SimpleParser#exp}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitNotExp(SimpleParser.NotExpContext ctx);
 }
