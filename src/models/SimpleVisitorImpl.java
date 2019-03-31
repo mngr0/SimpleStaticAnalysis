@@ -34,19 +34,17 @@ public class SimpleVisitorImpl extends SimpleBaseVisitor<SimpleElementBase> {
 	public SimpleElementBase visitFunction(FunctionContext ctx){
 		String ID = ctx.ID().getText();
 
-		addToTable(ID); //TODO added to table
+		addToTable(ID);
 
-		List<SimpleParameter> children = new LinkedList<SimpleParameter>();
-
+		List<SimpleStmt> children = new LinkedList<SimpleStmt>();
 		for(ParameterContext parameterContext : ctx.parameter()){
-			children.add( (SimpleParameter) visitParameter(parameterContext)); //TODO son veramente da visitare? Credo di si
-			//TODO perche' credo che possno essere creati in due modi
+			children.add( (SimpleStmt) visitParameter(parameterContext));
 		}
-		 SimpleStmtBlock block = (SimpleStmtBlock) visitBlock(ctx.block());
-		 countFunctions++;
-//		 SimpleStmtFunction function = new SimpleStmtFunction(block,ID,children);
-		 //return function;
-		return block; //TODO da cavare e mettere l'altro una volta capito che cazzo fa
+		SimpleStmtBlock block = (SimpleStmtBlock) visitBlock(ctx.block());
+		countFunctions++;
+		//SimpleStmtFunction function = new SimpleStmtFunction(block,ID,children);
+		//return function;
+		return block;
 	}
 
 	@Override
@@ -76,6 +74,24 @@ public class SimpleVisitorImpl extends SimpleBaseVisitor<SimpleElementBase> {
 
 	}
 
+	@Override public SimpleElementBase visitIfthenelse(IfthenelseContext ctx) {
+
+
+		List<SimpleStmt> exps = new LinkedList<SimpleStmt>();
+		List<SimpleStmt> blocks = new LinkedList<SimpleStmt>();
+		//visit each children
+		for(ExpContext expCtx : ctx.exp()){}
+			//exps.add((SimpleStmt) visit(expCtx));
+
+		//visit each children
+		for(BlockContext blockCtx : ctx.block())
+			blocks.add((SimpleStmt) visitBlock(blockCtx));
+
+
+		SimpleStmtIfthenelse ifthenelse = new SimpleStmtIfthenelse(exps,blocks);
+
+		return ifthenelse;
+	}
 
 	@Override
 	public SimpleElementBase visitStatement(StatementContext ctx) {

@@ -57,12 +57,13 @@ public class Analyse {
 			
 			//this means the semantic checker found some errors
 			if(errors.size() > 0){
+			//if(false){
 				System.out.println("Check semantics FAILED");			
 				for(SemanticError err: errors)
 					System.out.println(err);
 			}else{
 				System.out.println("Check semantics succeded");
-				System.out.println("Number of functions: "+visitor.getCountFunctions()); //TODO nice, sono pigro
+				System.out.println("Number of functions: "+visitor.getCountFunctions()); // TODO nice, sono pigro
 				boolean result=true;
 				for(Map.Entry<String,Integer> entry : visitor.getTable().entrySet()){
 					if(entry.getValue()>1){

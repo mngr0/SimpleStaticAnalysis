@@ -1,6 +1,18 @@
 /*{ a = 7 ; a = 3 ; c = 34 + 190 ; b = a+2 ; delete a ; print b ; print c ;} */
 
-{ int a = 3; int a; } }
+{
+def fun (){a=5;}
+def fun2(){a=6;}
+def a(){a=6;}
+def main(){
+if(a){
+a=5;
+int a;
+}
+
+}
+
+}
 
 /*
 
