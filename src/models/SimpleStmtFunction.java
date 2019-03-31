@@ -30,7 +30,7 @@ public class SimpleStmtFunction extends SimpleStmt {
         //check children semantics
         if(parameters!=null)
             for(SimpleStmt el:parameters)
-                result.addAll(((SimpleParameter)el).checkSemantics(e)); //TODO parameter deve aggiungere la nuova variabile non qua
+                result.addAll(((SimpleParameter)el).checkSemantics(e));
         if(block!=null){
             result.addAll(block.checkSemantics(e));
         }
@@ -42,7 +42,7 @@ public class SimpleStmtFunction extends SimpleStmt {
     }
 
     @Override
-    public BTBase inferBehavior(Environment e) { //TODO non ho la minima idea di cosa faccia
+    public BTBase inferBehavior(Environment e) {
         e.openScope();
 
         BTBlock current = null;

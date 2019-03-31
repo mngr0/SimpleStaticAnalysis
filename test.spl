@@ -4,6 +4,8 @@
 if(a){
 a=5;
 int a;
+}else{
+int a;
 }
 a=5;
 }

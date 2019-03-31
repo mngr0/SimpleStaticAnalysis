@@ -53,17 +53,17 @@ public class SimpleVisitorImpl extends SimpleBaseVisitor<SimpleElementBase> {
 		if(ctx.VAR()!=null){
 			//TODO gestione delle var
 		}
-		return visitDeclaration(ctx.declaration()); //TODO not sure per un cazzo
+		return visitDeclaration(ctx.declaration());
 
 	}
 
 	@Override
 	public SimpleElementBase visitDeclaration(DeclarationContext ctx) {
 		//visit the first child, this works for every case
-		if(ctx.ID()!=null){ //TODO o c'e' ID o c' e' un assegnamento
+		if(ctx.ID()!=null){
 			String ID= ctx.ID().getText();
 			addToTable(ID);
-			return new SimpleStmtDeclaration(ID); //TODO trick per dirgli di non fare nulla
+			return new SimpleStmtDeclaration(ID);
 		}
 		else{
 			SimpleStmtAssignment assignment =(SimpleStmtAssignment) visit(ctx.assignment());

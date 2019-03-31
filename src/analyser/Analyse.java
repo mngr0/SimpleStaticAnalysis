@@ -64,7 +64,6 @@ public class Analyse {
 			System.out.println("No repetitions of variables: "+ result);
 			//this means the semantic checker found some errors
 			if(errors.size() > 0){
-			//if(false){
 				System.out.println("Check semantics FAILED");			
 				for(SemanticError err: errors)
 					System.out.println(err);

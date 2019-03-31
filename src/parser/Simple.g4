@@ -8,9 +8,9 @@ block		: '{' statement* '}';
 statement	: assignment ';'
 			| deletion ';'
 			| print ';'
-			| declaration ';'   //TODO
-		    | function          //TODO
-            | ifthenelse        //TODO
+			| declaration ';'
+		    | function
+            | ifthenelse
 			| block;
 
 deletion	: DELETE ID;
@@ -19,20 +19,20 @@ print		: PRINT exp;
 
 assignment	: ID '=' exp ;
 
-function    : DEF ID '('(parameter(',' parameter)* )? ')' block  ;        //TODO
+function    : DEF ID '('(parameter(',' parameter)* )? ')' block  ;
 
-ifthenelse  : 'if' exp  block ('elif' exp block)* ('else' block)*; //TODO
+ifthenelse  : 'if' exp  block ('elif' exp block)* ('else' block)*;
 
-declaration : type ID //TODO
-            | type assignment; //TODO
+declaration : type ID
+            | type assignment;
 
 
 
 
 parameter   : (VAR)? declaration;
 
-type        : BOOL    //TODO
-            | INT;    //TODO
+type        : BOOL
+            | INT;
 
 
 exp			: '(' exp ')'							#baseExp
@@ -40,10 +40,10 @@ exp			: '(' exp ')'							#baseExp
 			| NOT exp                               #notExp
 			| left=exp op=('*' | '/') right=exp		#binExp
 			| left=exp op=('+' | '-') right=exp		#binExp
-			| left=exp op=('or' | 'and') right=exp	#boolExp //TODO
+			| left=exp op=('or' | 'and') right=exp	#boolExp
 			| ID 									#varExp
 		    | NUMBER								#valExp
-		    | BOOLS                                 #boolsExp; //TODO
+		    | BOOLS                                 #boolsExp;
 
 
 

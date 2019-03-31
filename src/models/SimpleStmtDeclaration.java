@@ -40,7 +40,6 @@ public class SimpleStmtDeclaration extends SimpleStmt {
         //if the variable doesn't exist in the current scope then
         //it has a cost equals to 1
 
-        //TODO
         return new BTAtom(cost);
     }
 
