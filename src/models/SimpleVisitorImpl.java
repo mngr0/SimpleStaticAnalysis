@@ -42,9 +42,9 @@ public class SimpleVisitorImpl extends SimpleBaseVisitor<SimpleElementBase> {
 		}
 		SimpleStmtBlock block = (SimpleStmtBlock) visitBlock(ctx.block());
 		countFunctions++;
-		//SimpleStmtFunction function = new SimpleStmtFunction(block,ID,children);
-		//return function;
-		return block;
+		SimpleStmtFunction function = new SimpleStmtFunction(block,ID,children);
+		return function;
+		//return block;
 	}
 
 	@Override
@@ -76,12 +76,11 @@ public class SimpleVisitorImpl extends SimpleBaseVisitor<SimpleElementBase> {
 
 	@Override public SimpleElementBase visitIfthenelse(IfthenelseContext ctx) {
 
-
-		List<SimpleStmt> exps = new LinkedList<SimpleStmt>();
+		List<SimpleExpVar> exps = new LinkedList<SimpleExpVar>();
 		List<SimpleStmt> blocks = new LinkedList<SimpleStmt>();
 		//visit each children
-		for(ExpContext expCtx : ctx.exp()){}
-			//exps.add((SimpleStmt) visit(expCtx));
+		for(ExpContext expCtx : ctx.exp())
+			exps.add((SimpleExpVar) visit(expCtx));
 
 		//visit each children
 		for(BlockContext blockCtx : ctx.block())

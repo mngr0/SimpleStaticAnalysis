@@ -9,11 +9,11 @@ import java.util.List;
 public class SimpleStmtFunction extends SimpleStmt {
 
     SimpleStmtBlock block;
-    List<SimpleParameter> parameters;
+    List<SimpleStmt> parameters;
     String id;
 
 
-    public SimpleStmtFunction(SimpleStmtBlock block, String id, List<SimpleParameter> parameters) {
+    public SimpleStmtFunction(SimpleStmtBlock block, String id, List<SimpleStmt> parameters) {
         this.block = block;
         this.id = id;
         this.parameters=parameters;
@@ -29,8 +29,8 @@ public class SimpleStmtFunction extends SimpleStmt {
 
         //check children semantics
         if(parameters!=null)
-            for(SimpleParameter el:parameters)
-                result.addAll(el.checkSemantics(e)); //TODO parameter deve aggiungere la nuova variabile non qua
+            for(SimpleStmt el:parameters)
+                result.addAll(((SimpleParameter)el).checkSemantics(e)); //TODO parameter deve aggiungere la nuova variabile non qua
         if(block!=null){
             result.addAll(block.checkSemantics(e));
         }

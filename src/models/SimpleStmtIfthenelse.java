@@ -2,20 +2,30 @@ package models;
 
 import models.behavior.BTBase;
 
+import java.util.LinkedList;
 import java.util.List;
 
 public class SimpleStmtIfthenelse extends SimpleStmt{
-    public SimpleStmtIfthenelse(List<SimpleStmt> exps, List<SimpleStmt> blocks) {
+
+    List<SimpleExpVar> exps;
+    List<SimpleStmt> blocks;
+
+    public SimpleStmtIfthenelse(List<SimpleExpVar> pExps, List<SimpleStmt> pBlocks) {
         super();
+        exps= pExps;
+        blocks=pBlocks;
     }
 
-    //public SimpleStmtIfthenelse(List<SimpleExpVar> exps, List<SimpleStmt> blocks) {
-    //    super();
-   // }
 
     @Override
     public List<SemanticError> checkSemantics(Environment e) {
-        return null;
+        LinkedList<SemanticError> res = new LinkedList<SemanticError>();
+        for (SimpleExpVar exp: exps)
+            res.addAll(exp.checkSemantics(e));
+        for (SimpleStmt block: blocks)
+            res.addAll(block.checkSemantics(e));
+
+        return res;
     }
 
     @Override

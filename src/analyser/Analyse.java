@@ -54,7 +54,14 @@ public class Analyse {
 			//this is just semantic checking
 			Environment e= new Environment();
 			List<SemanticError> errors = mainBlock.checkSemantics(e);
-			
+			System.out.println("Number of functions: "+visitor.getCountFunctions()); // TODO nice, sono pigro
+			boolean result=true;
+			for(Map.Entry<String,Integer> entry : visitor.getTable().entrySet()){
+				if(entry.getValue()>1){
+					result=false;
+				}
+			}
+			System.out.println("No repetitions of variables: "+ result);
 			//this means the semantic checker found some errors
 			if(errors.size() > 0){
 			//if(false){
@@ -63,14 +70,7 @@ public class Analyse {
 					System.out.println(err);
 			}else{
 				System.out.println("Check semantics succeded");
-				System.out.println("Number of functions: "+visitor.getCountFunctions()); // TODO nice, sono pigro
-				boolean result=true;
-				for(Map.Entry<String,Integer> entry : visitor.getTable().entrySet()){
-					if(entry.getValue()>1){
-						result=false;
-					}
-				}
-				System.out.println("No repetitions of variables: "+ result);
+
 
 				System.out.println("Calculating behavioral type");
 				
