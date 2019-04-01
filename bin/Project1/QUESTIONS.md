@@ -1,7 +1,0 @@
-- L' operatore == e' da inserire?
-- Cosa e' possibile fare nelle condizioni dell if then else
-- Nell if else posso mettere dichiarazioni nella condizione  
-- Le funzioni devono essere considerate nelle variabili dell es 3? 
-- Problema con la versione di antlr 
-- Separazione tra espressioni e espressioni booleani o possiamo avere tipo 3+ True? Es: python
-- Vuole solamentee le cose utili alla consegna o anche cose aggiuntive? ;

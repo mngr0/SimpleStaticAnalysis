@@ -2,58 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9de56ee3-3ac7-4c66-a84c-8d1ea0907991" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/models/SimpleStmtIfThenElse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.classpath" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.project" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/analyser/Analyse.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/analyser/Analyse.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/models/SimpleDeclaration.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/models/SimpleParameter.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/models/SimpleParameter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/models/SimpleStmtFunction.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/models/SimpleStmtFunction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/models/SimpleVisitorImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/models/SimpleVisitorImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/parser/Simple.g4" beforeDir="false" afterPath="$PROJECT_DIR$/bin/parser/Simple.g4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/parser/Simple.interp" beforeDir="false" afterPath="$PROJECT_DIR$/bin/parser/Simple.interp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/parser/Simple.tokens" beforeDir="false" afterPath="$PROJECT_DIR$/bin/parser/Simple.tokens" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/parser/SimpleBaseListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/parser/SimpleBaseListener.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/parser/SimpleBaseVisitor.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/parser/SimpleBaseVisitor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/parser/SimpleLexer.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/parser/SimpleLexer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/parser/SimpleLexer.interp" beforeDir="false" afterPath="$PROJECT_DIR$/bin/parser/SimpleLexer.interp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/parser/SimpleLexer.tokens" beforeDir="false" afterPath="$PROJECT_DIR$/bin/parser/SimpleLexer.tokens" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/parser/SimpleListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/parser/SimpleListener.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/parser/SimpleParser$BaseExpContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/parser/SimpleParser$BaseExpContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/parser/SimpleParser$BinExpContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/parser/SimpleParser$BinExpContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/parser/SimpleParser$BoolExpContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/parser/SimpleParser$BoolExpContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/parser/SimpleParser$BoolsExpContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/parser/SimpleParser$BoolsExpContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/parser/SimpleParser$DeclarationContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/parser/SimpleParser$DeclarationContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/parser/SimpleParser$DeletionContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/parser/SimpleParser$DeletionContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/parser/SimpleParser$ExpContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/parser/SimpleParser$ExpContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/parser/SimpleParser$FunctionContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/parser/SimpleParser$FunctionContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/parser/SimpleParser$IfthenelseContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/parser/SimpleParser$IfthenelseContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/parser/SimpleParser$NegExpContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/parser/SimpleParser$NegExpContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/parser/SimpleParser$NotExpContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/parser/SimpleParser$NotExpContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/parser/SimpleParser$ParameterContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/parser/SimpleParser$ParameterContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/parser/SimpleParser$PrintContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/parser/SimpleParser$PrintContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/parser/SimpleParser$TypeContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/parser/SimpleParser$TypeContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/parser/SimpleParser$ValExpContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/parser/SimpleParser$ValExpContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/parser/SimpleParser$VarExpContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/parser/SimpleParser$VarExpContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/parser/SimpleParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/parser/SimpleParser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/parser/SimpleVisitor.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/parser/SimpleVisitor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/analyser/Analyse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/analyser/Analyse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/SimpleParameter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/SimpleParameter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/SimpleStmtFunction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/SimpleStmtFunction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/SimpleVisitorImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/SimpleVisitorImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/parser/Simple.g4" beforeDir="false" afterPath="$PROJECT_DIR$/src/parser/Simple.g4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/parser/Simple.interp" beforeDir="false" afterPath="$PROJECT_DIR$/src/parser/Simple.interp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/parser/Simple.tokens" beforeDir="false" afterPath="$PROJECT_DIR$/src/parser/Simple.tokens" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/parser/SimpleBaseListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/parser/SimpleBaseListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/parser/SimpleBaseVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/parser/SimpleBaseVisitor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/parser/SimpleLexer.interp" beforeDir="false" afterPath="$PROJECT_DIR$/src/parser/SimpleLexer.interp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/parser/SimpleLexer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/parser/SimpleLexer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/parser/SimpleLexer.tokens" beforeDir="false" afterPath="$PROJECT_DIR$/src/parser/SimpleLexer.tokens" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/parser/SimpleListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/parser/SimpleListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/parser/SimpleParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/parser/SimpleParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/parser/SimpleVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/parser/SimpleVisitor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.spl" beforeDir="false" afterPath="$PROJECT_DIR$/test.spl" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/bin/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -67,8 +16,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/parser/Simple.g4">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-516">
-              <caret line="26" column="59" selection-start-line="26" selection-start-column="59" selection-end-line="26" selection-end-column="59" />
+            <state relative-caret-position="249">
+              <caret line="47" column="60" selection-start-line="47" selection-start-column="60" selection-end-line="47" selection-end-column="60" />
             </state>
           </provider>
         </entry>
@@ -215,12 +164,12 @@
         <option value="$PROJECT_DIR$/src/Project1/models/SimpleStmtFunction.java" />
         <option value="$PROJECT_DIR$/src/Project1/analyser/Analyse1.java" />
         <option value="$PROJECT_DIR$/src/models/SimpleVisitorImpl.java" />
-        <option value="$PROJECT_DIR$/src/parser/Simple.g4" />
         <option value="$PROJECT_DIR$/src/Project1/models/SimpleParameter.java" />
         <option value="$PROJECT_DIR$/src/Project1/models/SimpleVisitorImpl.java" />
         <option value="$PROJECT_DIR$/src/Project1/parser/Simple.g4" />
         <option value="$PROJECT_DIR$/src/analyser/Analyse.java" />
         <option value="$PROJECT_DIR$/test.spl" />
+        <option value="$PROJECT_DIR$/src/parser/Simple.g4" />
       </list>
     </option>
   </component>
@@ -269,6 +218,19 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="parser" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="SimpleStaticAnalysis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SimpleStaticAnalysis" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Project1" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SimpleStaticAnalysis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SimpleStaticAnalysis" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Project1" type="462c0819:PsiDirectoryNode" />
+              <item name="parser" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -283,7 +245,7 @@
     <property name="$PROJECT_DIR$/src/parser/Simple.g4::/output-dir" value="$PROJECT_DIR$/src" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554125365623" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554126257535" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
@@ -381,12 +343,12 @@
       <workItem from="1553973006107" duration="53000" />
       <workItem from="1553980593213" duration="15844000" />
       <workItem from="1554054948575" duration="432000" />
-      <workItem from="1554111098818" duration="7724000" />
+      <workItem from="1554111098818" duration="8164000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37514000" />
+    <option name="totallyTimeSpent" value="37954000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -399,7 +361,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1213" height="695" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3513282" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -779,8 +740,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/parser/Simple.g4">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-516">
-          <caret line="26" column="59" selection-start-line="26" selection-start-column="59" selection-end-line="26" selection-end-column="59" />
+        <state relative-caret-position="249">
+          <caret line="47" column="60" selection-start-line="47" selection-start-column="60" selection-end-line="47" selection-end-column="60" />
         </state>
       </provider>
     </entry>

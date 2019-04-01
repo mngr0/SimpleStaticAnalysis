@@ -37,15 +37,15 @@ type        : BOOL
             | INT;
 
 
-exp			: '(' exp ')'							#baseExp
-			| '-' exp								#negExp
-			| NOT exp                               #notExp
-			| left=exp op=('*' | '/') right=exp		#binExp
-			| left=exp op=('+' | '-') right=exp		#binExp
-			| left=exp op=('or' | 'and') right=exp	#boolExp //TODO
-			| ID 									#varExp
-		    | NUMBER								#valExp
-		    | BOOLS                                 #boolsExp; //TODO
+exp			: '(' exp ')'						        	#baseExp
+			| '-' exp						    		    #negExp
+			| NOT exp                                       #notExp
+			| left=exp op=('*' | '/') right=exp		        #binExp
+			| left=exp op=('+' | '-') right=exp		        #binExp
+			| left=exp op=('or' | 'and'| '==') right=exp    #boolExp //TODO
+			| ID 									        #varExp
+		    | NUMBER								        #valExp
+		    | BOOLS                                         #boolsExp; //TODO
 
 
 
