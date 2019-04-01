@@ -12,11 +12,12 @@ poiche' e' stato effettuato un upgrade di versione di ANTLR da 4.6 alla ultima
 release 4.7.2 . Per completezza e' stato anche inserito il jar utilizzato per l'esecuzione runtime
 
 #Analyse1
-Ad analyse1 e' stata rimossa la parte di analisi semantica e comportamentale
-che non e' rilevante al fine della consegna. Sono state aggiunte le stampe e le funzioni relative 
-al conteggio delle funzioni dichiarate e alla presenza o menon di dichiarazioni doppie.
+Analyse1 contiene il main che lancia l' esecuzione richiesta dalla consegna. 
+Il lexer e il parser vengono eseguiti sul file test.spl, utilizzando la grammatica Simple.g4.
+Vengono stampati su console il conteggio delle funzioni dichiarate e la presenza o meno di dichiarazioni doppie.
 
 #Simple.g4
+Contiene la sintassi, estesa con funzioni e dichiarazioni.
 Per la sintassi e' stato preso come esempio Python 
 
 #SimpleVisitorImpl
