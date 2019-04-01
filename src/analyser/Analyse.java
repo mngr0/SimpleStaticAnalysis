@@ -62,21 +62,24 @@ public class Analyse {
 					System.out.println(err);
 			}else{
 				System.out.println("Check semantics succeded");
-				System.out.println("Number of functions: "+visitor.getCountFunctions()); //TODO nice, sono pigro
+				System.out.println("Number of functions: "+visitor.getCountFunctions()); //TODO consegna 1
 				boolean result=true;
 				for(Map.Entry<String,Integer> entry : visitor.getTable().entrySet()){
 					if(entry.getValue()>1){
 						result=false;
 					}
 				}
-				System.out.println("No repetitions of variables: "+ result);
+				System.out.println("No repetitions of variables: "+ result); //TODO consegna 1
 
+				/*
+				//TODO per sta consegna non ci interessa il behaviour
 				System.out.println("Calculating behavioral type");
 				
 				//give a fresh environment, no need to make it persist
-				BTBlock res = (BTBlock)mainBlock.inferBehavior(new Environment());
+				 BTBlock res = (BTBlock)mainBlock.inferBehavior(new Environment());
 				
-				System.out.println(res.toString());
+				 System.out.println(res.toString());
+				 */
 			}
 
 		/*}catch(RecognitionException e){

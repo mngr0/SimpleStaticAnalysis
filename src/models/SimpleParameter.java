@@ -4,7 +4,7 @@ import models.behavior.BTBase;
 
 import java.util.List;
 
-public class SimpleParameter extends SimpleElementBase { //TODO fix all
+public class SimpleParameter extends SimpleStmt { //TODO fix all
 
     @Override
     public List<SemanticError> checkSemantics(Environment e) {

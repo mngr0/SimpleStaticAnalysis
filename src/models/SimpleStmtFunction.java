@@ -1,5 +1,6 @@
 package models;
 
+import models.behavior.BTAtom;
 import models.behavior.BTBase;
 import models.behavior.BTBlock;
 
@@ -9,11 +10,11 @@ import java.util.List;
 public class SimpleStmtFunction extends SimpleStmt {
 
     SimpleStmtBlock block;
-    List<SimpleParameter> parameters;
+    List<SimpleStmt> parameters;
     String id;
 
 
-    public SimpleStmtFunction(SimpleStmtBlock block, String id, List<SimpleParameter> parameters) {
+    public SimpleStmtFunction(SimpleStmtBlock block, String id, List<SimpleStmt> parameters) {
         this.block = block;
         this.id = id;
         this.parameters=parameters;
@@ -29,7 +30,7 @@ public class SimpleStmtFunction extends SimpleStmt {
 
         //check children semantics
         if(parameters!=null)
-            for(SimpleParameter el:parameters)
+            for(SimpleStmt el:parameters)
                 result.addAll(el.checkSemantics(e)); //TODO parameter deve aggiungere la nuova variabile non qua
         if(block!=null){
             result.addAll(block.checkSemantics(e));
@@ -43,14 +44,22 @@ public class SimpleStmtFunction extends SimpleStmt {
 
     @Override
     public BTBase inferBehavior(Environment e) { //TODO non ho la minima idea di cosa faccia
-        e.openScope();
+        e.openScope(); //TODO non so se serva
 
-        BTBlock current = null;
+        int cost = 0;
+        //if the variable doesn't exist in the current scope then
+        //it has a cost equals to 1
+        if(e.getVariableValueLocal(id) == null){
+            cost = 1;
 
+        }
+
+        //put the variable in the current scope with the current value
+        //e.addVariable(id, parameters); //TODO devo capire i tipo dei parametri, non posso avere funzioni con lo stesso tipaggio
         //close scope for this block
         e.closeScope();
 
-        return current;
+        return new BTAtom(cost);
     }
 
 }

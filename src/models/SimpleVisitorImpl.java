@@ -34,19 +34,39 @@ public class SimpleVisitorImpl extends SimpleBaseVisitor<SimpleElementBase> {
 	public SimpleElementBase visitFunction(FunctionContext ctx){
 		String ID = ctx.ID().getText();
 
-		addToTable(ID); //TODO added to table
+		addToTable(ID); // added to table for count
 
-		List<SimpleParameter> children = new LinkedList<SimpleParameter>();
+		List<SimpleStmt> children = new LinkedList<>();
 
 		for(ParameterContext parameterContext : ctx.parameter()){
-			children.add( (SimpleParameter) visitParameter(parameterContext)); //TODO son veramente da visitare? Credo di si
-			//TODO perche' credo che possno essere creati in due modi
+			children.add( (SimpleStmt) visitParameter(parameterContext)); //TODO tipaggio errato in my opinion
+
 		}
 		 SimpleStmtBlock block = (SimpleStmtBlock) visitBlock(ctx.block());
 		 countFunctions++;
-//		 SimpleStmtFunction function = new SimpleStmtFunction(block,ID,children);
-		 //return function;
-		return block; //TODO da cavare e mettere l'altro una volta capito che cazzo fa
+		 SimpleStmtFunction function = new SimpleStmtFunction(block,ID,children);
+		 return function;
+
+	}
+
+
+	@Override
+	public SimpleElementBase visitIfthenelse(IfthenelseContext ctx) {
+
+		List<SimpleExpVar> exps = new LinkedList<SimpleExpVar>();
+		List<SimpleStmt> blocks = new LinkedList<SimpleStmt>();
+		//visit each children
+		for(ExpContext expCtx : ctx.exp())
+			exps.add((SimpleExpVar) visit(expCtx));
+
+		//visit each children
+		for(BlockContext blockCtx : ctx.block())
+			blocks.add((SimpleStmt) visitBlock(blockCtx));
+
+
+		SimpleStmtIfThenElse ifthenelse = new SimpleStmtIfThenElse(exps,blocks);
+
+		return ifthenelse;
 	}
 
 	@Override
@@ -55,7 +75,7 @@ public class SimpleVisitorImpl extends SimpleBaseVisitor<SimpleElementBase> {
 		if(ctx.VAR()!=null){
 			//TODO gestione delle var
 		}
-		return visitDeclaration(ctx.declaration()); //TODO not sure per un cazzo
+		return  visitDeclaration(ctx.declaration()); //TODO not sure per un cazzo
 
 	}
 
@@ -71,7 +91,7 @@ public class SimpleVisitorImpl extends SimpleBaseVisitor<SimpleElementBase> {
 			SimpleStmtAssignment assignment =(SimpleStmtAssignment) visit(ctx.assignment());
 			addToTable(ctx.assignment().ID().getText());
 
-			return assignment;
+			return  assignment;
 		}
 
 	}
@@ -86,10 +106,10 @@ public class SimpleVisitorImpl extends SimpleBaseVisitor<SimpleElementBase> {
 	@Override
 	public SimpleElementBase visitAssignment(AssignmentContext ctx) {
 		//get expression
+		String id = ctx.ID().getText();
 		SimpleExp exp = (SimpleExp) visit(ctx.exp());
 
 		//get id of variable
-		String id = ctx.ID().getText();
 		//construct assignment expression
 		SimpleStmtAssignment assign = new SimpleStmtAssignment(exp, id);
 		return assign;
