@@ -10,7 +10,6 @@ import java.util.List;
 import java.util.Map;
 
 
-@SuppressWarnings("Duplicates")
 public class SimpleVisitorImpl extends SimpleBaseVisitor<SimpleElementBase> {
 
 	private int countFunctions = 0;
@@ -47,8 +46,7 @@ public class SimpleVisitorImpl extends SimpleBaseVisitor<SimpleElementBase> {
 		}
 		 SimpleStmtBlock block = (SimpleStmtBlock) visitBlock(ctx.block());
 		 countFunctions++;
-		 SimpleStmtFunction function = new SimpleStmtFunction(block,ID,children);
-		 return function;
+		 return null;
 
 	}
 
@@ -66,10 +64,7 @@ public class SimpleVisitorImpl extends SimpleBaseVisitor<SimpleElementBase> {
 		for(BlockContext blockCtx : ctx.block())
 			blocks.add((SimpleStmt) visitBlock(blockCtx));
 
-
-		SimpleStmtIfThenElse ifthenelse = new SimpleStmtIfThenElse(exps,blocks);
-
-		return ifthenelse;
+		return null;
 	}
 
 	@Override
@@ -84,14 +79,12 @@ public class SimpleVisitorImpl extends SimpleBaseVisitor<SimpleElementBase> {
 		if(ctx.ID()!=null){
 			String ID= ctx.ID().getText();
 			addToTable(ID);
-			return new SimpleStmtDeclaration(ID);
 		}
 		else{
-			SimpleStmtAssignment assignment =(SimpleStmtAssignment) visit(ctx.assignment());
+			visit(ctx.assignment());
 			addToTable(ctx.assignment().ID().getText());
-			return  assignment;
 		}
-
+		return null;
 	}
 
 

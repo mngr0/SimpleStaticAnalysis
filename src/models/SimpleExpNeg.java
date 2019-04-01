@@ -10,7 +10,6 @@ public class SimpleExpNeg extends SimpleExp {
 	/**
 	 * Represents a negated expression
 	 * @param exp 
-	 * @param rightSide
 	 */
 	public SimpleExpNeg(SimpleExp exp) {
 		this.exp = exp;		

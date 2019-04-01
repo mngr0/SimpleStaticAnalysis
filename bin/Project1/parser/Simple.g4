@@ -13,9 +13,6 @@ statement	: assignment ';'
             | ifthenelse
 			| block;
 
-ifthenelse  : IF exp  block (ELIF exp block)* (ELSE block)?;
-
-
 deletion	: DELETE ID;
 
 print		: PRINT exp;
@@ -27,6 +24,7 @@ function    : DEF ID '('(parameter(',' parameter)* )? ')' block  ;
 
 parameter   : (VAR)? declaration;
 
+ifthenelse  : IF exp  block (ELIF exp block)* (ELSE block)?; //TODO exp o assignment?
 
 declaration : type (ID | assignment )  ;
 
@@ -39,15 +37,15 @@ type        : BOOL
             | INT;
 
 
-exp			: '(' exp ')'							#baseExp
-			| '-' exp								#negExp
-			| NOT exp                               #notExp
-			| left=exp op=('*' | '/') right=exp		#binExp
-			| left=exp op=('+' | '-') right=exp		#binExp
-			| left=exp op=('or' | 'and') right=exp	#boolExp
-			| ID 									#varExp
-		    | NUMBER								#valExp
-		    | BOOLS                                 #boolsExp;
+exp			: '(' exp ')'						        	#baseExp
+			| '-' exp						    		    #negExp
+			| NOT exp                                       #notExp
+			| left=exp op=('*' | '/') right=exp		        #binExp
+			| left=exp op=('+' | '-') right=exp		        #binExp
+			| left=exp op=('or' | 'and'| '==') right=exp    #boolExp //TODO
+			| ID 									        #varExp
+		    | NUMBER								        #valExp
+		    | BOOLS                                         #boolsExp; //TODO
 
 
 
@@ -56,10 +54,6 @@ exp			: '(' exp ')'							#baseExp
 
 //IDs
 fragment CHAR 	: 'a'..'z' |'A'..'Z' ;
-IF              : 'if';
-ELIF            : 'elif';
-ELSE            : 'else';
-
 DEF             : 'def' ;
 DELETE          : 'delete';
 PRINT           : 'print';
@@ -68,6 +62,9 @@ INT             : 'int';
 VAR             : 'var';
 BOOLS           : 'True'
                 | 'False';
+IF              : 'if';
+ELIF            : 'elif';
+ELSE            : 'else';
 NOT             : 'not';
 ID              : CHAR (CHAR | DIGIT)* ;
 

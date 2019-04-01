@@ -1,9 +1,9 @@
 /*{ a = 7 ; a = 3 ; c = 34 + 190 ; b = a+2 ; delete a ; print b ; print c ;} */
 
-{ def fun ( int c ) { int b = 0; }
+{ {def fun ( int c ) { int b = 0; } }
 
-
-  int a = 0 ; if ( a ) { int a = 1 ; } else  { int b; }   }
+ { a = b and c  ; }
+  { int a = 0 ; if ( a ) { int a = 1 ; } else  { int b; }   } }
 /*
 
 {a = 7 ; b = a ; delete a ; print b ; }

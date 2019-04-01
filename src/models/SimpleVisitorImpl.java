@@ -8,7 +8,7 @@ import java.util.Map;
 import parser.SimpleBaseVisitor;
 import parser.SimpleParser.*;
 
-public class SimpleVisitorImpl extends SimpleBaseVisitor<SimpleElementBase> {
+public class 	SimpleVisitorImpl extends SimpleBaseVisitor<SimpleElementBase> {
 
 	private int countFunctions = 0;
 	private Map<String,Integer> table = new HashMap<>();
@@ -198,6 +198,33 @@ public class SimpleVisitorImpl extends SimpleBaseVisitor<SimpleElementBase> {
 		//get the variable id and create expression variable
 		return new SimpleExpVar(ctx.ID().getText());
 	}
-	
 
+/*
+	@Override
+	public SimpleElementBase visitBoolExp(BoolExpContext ctx){
+		SimpleExp left = (SimpleExp) visit(ctx.left);
+
+		//build right
+		SimpleExp right = (SimpleExp) visit(ctx.right);
+
+		//build binary operation according operator
+
+		switch(ctx.op.getText()){
+			case "or": return new SimpleExpDiff(left, right);
+			case "and": return new SimpleExpSum(left, right);
+			case "==": return new SimpleExpMult(left, right);
+			default: return null; //this should not happen
+		}
+
+		//return right;
+
+	}
+
+	@Override
+	public SimpleElementBase visitNotExp(NotExpContext ctx){
+
+		return visit(ctx.exp());
+
+	}
+*/
 }
