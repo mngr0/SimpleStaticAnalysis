@@ -13,6 +13,12 @@ public class SimpleStmtFunction extends SimpleStmt {
     List<SimpleStmt> parameters;
     String id;
 
+    public SimpleStmtFunction() {
+        this.block = block;
+        this.id = id;
+        this.parameters=parameters;
+    }
+
 
     public SimpleStmtFunction(SimpleStmtBlock block, String id, List<SimpleStmt> parameters) {
         this.block = block;

@@ -14,8 +14,8 @@ import models.behavior.BTBlock;
 import org.antlr.v4.runtime.ANTLRInputStream;
 import org.antlr.v4.runtime.CommonTokenStream;
 
-import parser.SimpleLexer;
-import parser.SimpleParser;
+import models.SimpleLexer;
+import models.SimpleParser;
 
 public class Analyse {
 

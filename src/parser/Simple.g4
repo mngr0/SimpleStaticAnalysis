@@ -1,78 +1,62 @@
 grammar Simple;
 
-// THIS IS THE PARSER INPUT 
+// PARSER RULES
 
 
 block		: '{' statement* '}';
 
 statement	: assignment ';'
-			| deletion ';'
-			| print ';'
-			| declaration ';'
-		    | function
-            | ifthenelse
-			| block;
-
-deletion	: DELETE ID;
-
-print		: PRINT exp;
+		  	| deletion ';'
+		  	| print ';'
+		  	| functioncall ';'
+		  	| ifthenelse
+		  	| declaration
+		  	| block ;
 
 assignment	: ID '=' exp ;
 
-function    : DEF ID '('(parameter(',' parameter)* )? ')' block  ;
+deletion	: 'delete' ID ;
 
+print		: 'print' exp ;
 
-parameter   : (VAR)? declaration;
+functioncall : ID '(' (exp (',' exp)* )? ')' ;
 
-ifthenelse  : IF exp  block (ELIF exp block)* (ELSE block)?; //TODO exp o assignment?
+ifthenelse 	: 'if' '(' exp ')' 'then' block 'else' block ;
 
-declaration : type (ID | assignment )  ;
+declaration	: type ID '=' exp ';'
+		  	| ID '(' ( parameter ( ',' parameter)* )? ')' block ;
 
+type   		: 'int'
+        	  | 'bool'  ;
 
+parameter  	: ('var')? type ID ;
 
+exp    		:  ('-')? left=term (('+' | '-') right=exp)? ;
 
+term   		: left=factor (('*' | '/') right=term)? ;
 
+factor 		: left=value (op=ROP right=value)?
+	          |   left=value (op=('&&' | '||') right=value)? ;
 
-type        : BOOL
-            | INT;
+value  		: INTEGER
+     		  | ( 'true' | 'false' )
+      		  | '(' exp ')'
+		  | ID ;
 
+// LEXER RULES
 
-exp			: '(' exp ')'						        	#baseExp
-			| '-' exp						    		    #negExp
-			| NOT exp                                       #notExp
-			| left=exp op=('*' | '/') right=exp		        #binExp
-			| left=exp op=('+' | '-') right=exp		        #binExp
-			| left=exp op=('or' | 'and'| '==') right=exp    #boolExp //TODO
-			| ID 									        #varExp
-		    | NUMBER								        #valExp
-		    | BOOLS                                         #boolsExp; //TODO
-
-
-
-// THIS IS THE LEXER INPUT
-
-
-//IDs
-fragment CHAR 	: 'a'..'z' |'A'..'Z' ;
-DEF             : 'def' ;
-DELETE          : 'delete';
-PRINT           : 'print';
-BOOL            : 'bool';
-INT             : 'int';
-VAR             : 'var';
-BOOLS           : 'True'
-                | 'False';
-IF              : 'if';
-ELIF            : 'elif';
-ELSE            : 'else';
-NOT             : 'not';
-ID              : CHAR (CHAR | DIGIT)* ;
+ROP     : '==' | '>' | '<' | '<=' | '>=' | '!=' ;
 
 //Numbers
-fragment DIGIT	: '0'..'9';	
-NUMBER          : DIGIT+;
+fragment DIGIT : '0'..'9';
+INTEGER       : DIGIT+;
+
+//IDs
+fragment CHAR  : 'a'..'z' |'A'..'Z' ;
+ID              : CHAR (CHAR | DIGIT)* ;
 
 //ESCAPE SEQUENCES
-WS              : (' '|'\t'|'\n'|'\r')-> skip;
-LINECOMMENTS 	: '//' (~('\n'|'\r'))* -> skip;
-BLOCKCOMMENTS    : '/*'( ~('/'|'*')|'/'~'*'|'*'~'/'|BLOCKCOMMENTS)* '*/' -> skip;
+WS              : (' '|'\t'|'\n'|'\r')-> skip ;
+LINECOMENTS    	: '//' (~('\n'|'\r'))* -> skip ;
+BLOCKCOMENTS    : '/*'( ~('/'|'*')|'/'~'*'|'*'~'/'|BLOCKCOMENTS)* '*/' -> skip ;
+ERR     	: .  -> channel(HIDDEN) ;
